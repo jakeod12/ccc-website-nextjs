@@ -7,7 +7,7 @@ import AnimatedCounter from "../components/AnimatedCounter";
 export const metadata: Metadata = {
   title: "Projects | Lewiston NC Facility & Pipeline",
   description:
-    "CleanCycleCarbon operates a commercial CO₂ capture facility in Lewiston, NC and is developing additional projects across multiple feedstock types.",
+    "CleanCycleCarbon operates a commercial CO₂ capture facility in Lewiston, NC and has multiple projects in active development across the U.S.",
   openGraph: {
     title: "Operational Today. Expanding Tomorrow.",
     description:

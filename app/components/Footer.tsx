@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0F2D5A] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
             <Image
@@ -58,6 +58,33 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[#96C3E1] mb-5">
+              Locations
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/locations/north-charleston-sc"
+                  className="group inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  <span className="w-0 h-px bg-[#96C3E1] group-hover:w-3 transition-all duration-200 rounded-full" />
+                  North Charleston, SC
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/locations/lewiston-nc"
+                  className="group inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
+                >
+                  <span className="w-0 h-px bg-[#96C3E1] group-hover:w-3 transition-all duration-200 rounded-full" />
+                  Lewiston, NC
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -7,7 +7,7 @@ import AnimatedCounter from "../components/AnimatedCounter";
 export const metadata: Metadata = {
   title: "CO₂ Supply | Domestic Beverage-Grade CO₂",
   description:
-    "CleanCycleCarbon supplies FDA-registered, beverage-grade CO₂ to food, beverage, and industrial buyers. Domestic. Reliable. Commercial scale.",
+    "Need a reliable domestic source of food-grade or beverage-grade CO₂? CleanCycleCarbon supplies certified CO₂ to beverage, food, and industrial buyers across the U.S.",
   openGraph: {
     title: "Domestic CO₂ You Can Count On",
     description:

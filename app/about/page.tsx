@@ -6,7 +6,7 @@ import ScrollReveal from "../components/ScrollReveal";
 export const metadata: Metadata = {
   title: "About | CleanCycleCarbon",
   description:
-    "CleanCycleCarbon is an independent carbon capture and CO₂ purification company. We own our technology and operate commercial-scale capture facilities.",
+    "CleanCycleCarbon is a carbon capture company founded in 2021. We develop, build, and operate CO₂ capture and purification facilities at industrial sites across the U.S.",
   openGraph: {
     title: "Built from the Ground Up | CleanCycleCarbon",
     description:
@@ -92,6 +92,7 @@ export default function AboutPage() {
             src="/images/team-bg.jpg"
             alt="CleanCycleCarbon team and company background"
             fill
+            priority
             className="object-cover"
           />
         </div>

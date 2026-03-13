@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Partner With CleanCycleCarbon",
   description:
-    "Get in touch with CleanCycleCarbon. Whether you're an investor, CO₂ buyer, or potential site host, we'd like to hear from you.",
+    "Partner with CleanCycleCarbon. We work with CO₂ buyers, industrial site hosts, and investors to develop carbon capture projects across the United States.",
   openGraph: {
     title: "Partner With CleanCycleCarbon",
     description:

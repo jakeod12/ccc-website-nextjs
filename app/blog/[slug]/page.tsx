@@ -40,12 +40,57 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+const internalLinks: { pattern: RegExp; href: string; }[] = [
+  { pattern: /\b(cryogenic purification|our purification technology|patent pending hydrocarbon removal technology|cryogenic CO₂ purification)\b/i, href: "/technology" },
+  { pattern: /\b(beverage[ -]grade CO₂|domestic CO₂ supply|domestic supply|food grade CO₂|beverage grade specifications)\b/i, href: "/co2-supply" },
+  { pattern: /\b(Lewiston|our first facility|first commercial facility)\b/i, href: "/projects" },
+];
+
+function autoLinkText(text: string): React.ReactNode[] {
+  const usedHrefs = new Set<string>();
+  const parts: React.ReactNode[] = [];
+  let remaining = text;
+  let key = 0;
+
+  while (remaining.length > 0) {
+    let earliestMatch: { index: number; length: number; href: string; matched: string } | null = null;
+
+    for (const { pattern, href } of internalLinks) {
+      if (usedHrefs.has(href)) continue;
+      const match = remaining.match(pattern);
+      if (match && match.index !== undefined) {
+        if (!earliestMatch || match.index < earliestMatch.index) {
+          earliestMatch = { index: match.index, length: match[0].length, href, matched: match[0] };
+        }
+      }
+    }
+
+    if (!earliestMatch) {
+      parts.push(remaining);
+      break;
+    }
+
+    if (earliestMatch.index > 0) {
+      parts.push(remaining.slice(0, earliestMatch.index));
+    }
+    parts.push(
+      <Link key={key++} href={earliestMatch.href} className="text-[#2D69B4] hover:underline">
+        {earliestMatch.matched}
+      </Link>
+    );
+    usedHrefs.add(earliestMatch.href);
+    remaining = remaining.slice(earliestMatch.index + earliestMatch.length);
+  }
+
+  return parts;
+}
+
 function renderBlock(block: ContentBlock, idx: number) {
   switch (block.type) {
     case "paragraph":
       return (
         <p key={idx} className="text-gray-700 leading-relaxed mb-6">
-          {block.text}
+          {autoLinkText(block.text)}
         </p>
       );
     case "heading":

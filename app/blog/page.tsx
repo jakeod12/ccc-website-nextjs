@@ -7,7 +7,7 @@ import { getAllArticles } from "./lib";
 export const metadata: Metadata = {
   title: "Blog | CleanCycleCarbon",
   description:
-    "Insights on CO₂ capture, purification, and the beverage grade CO₂ market from the CleanCycleCarbon team.",
+    "Insights on carbon capture, CO₂ supply chain trends, and CleanCycleCarbon project updates from the team building domestic CO₂ supply.",
   openGraph: {
     title: "Blog | CleanCycleCarbon",
     description:
@@ -61,6 +61,7 @@ export default function BlogPage() {
                         src={article.heroImage}
                         alt={article.title}
                         fill
+                        priority={i === 0}
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />

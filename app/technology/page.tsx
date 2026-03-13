@@ -7,7 +7,7 @@ import ProcessFlow from "../components/ProcessFlow";
 export const metadata: Metadata = {
   title: "Technology | Patent-Pending CO₂ Purification",
   description:
-    "CleanCycleCarbon's patent-pending cryogenic CO₂ purification process captures and purifies industrial CO₂ emissions to FDA-registered, beverage-grade standards at commercial scale.",
+    "CleanCycleCarbon's patent-pending cryogenic purification process captures CO₂ from industrial emissions and produces FDA-registered, beverage-grade CO₂ at commercial scale.",
   openGraph: {
     title: "In-House Technology. Commercial Scale. Proven Results.",
     description:
@@ -306,7 +306,7 @@ export default function TechnologyPage() {
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.3}>
                 <p className="mt-8 text-gray-500 leading-relaxed">
-                  The Lewiston, NC facility demonstrated this quality at commercial scale. The product goes directly to buyers who require certified, traceable CO₂.
+                  The <Link href="/projects" className="text-[#2D69B4] hover:underline">Lewiston, NC facility</Link> demonstrated this quality at commercial scale. The product goes directly to buyers who require certified, traceable CO₂. <Link href="/co2-supply" className="text-[#2D69B4] hover:underline">View available CO₂ supply</Link>.
                 </p>
               </ScrollReveal>
             </div>

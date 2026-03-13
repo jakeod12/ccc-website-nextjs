@@ -12,7 +12,7 @@ const linkedInPosts = linkedInPostsRaw as LinkedInPost[];
 export const metadata: Metadata = {
   title: "CO₂ Capture & Purification | CleanCycleCarbon",
   description:
-    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality. Commercial scale. Operating now in Lewiston, NC.",
+    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality. Commercial scale. Operating now. Domestic supply.",
   openGraph: {
     title: "Carbon Capture That Works. Operating Now.",
     description:
@@ -27,12 +27,13 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "CleanCycleCarbon",
-  url: "https://cleancyclecarbon.com",
-  logo: "https://cleancyclecarbon.com/images/ccc-logo.png",
+  url: "https://www.cleancyclecarbon.com",
+  logo: "https://www.cleancyclecarbon.com/images/ccc-logo-white.png",
   description:
-    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality.",
+    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality at commercial scale.",
+  foundingDate: "2021",
   email: "info@cleancyclecarbon.com",
-  telephone: "+13072640309",
+  telephone: "+1-307-264-0309",
   address: {
     "@type": "PostalAddress",
     streetAddress: "4287 Spruill Avenue, Suite 203",
@@ -41,7 +42,41 @@ const organizationSchema = {
     postalCode: "29405",
     addressCountry: "US",
   },
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+1-307-264-0309",
+    contactType: "customer service",
+    email: "info@cleancyclecarbon.com",
+  },
   sameAs: ["https://www.linkedin.com/company/cleancyclecarbon/"],
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "CleanCycleCarbon",
+  image: "https://www.cleancyclecarbon.com/images/facility-golden-hour.jpg",
+  url: "https://www.cleancyclecarbon.com",
+  telephone: "+1-307-264-0309",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "4287 Spruill Avenue, Suite 203",
+    addressLocality: "North Charleston",
+    addressRegion: "SC",
+    postalCode: "29405",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 32.854,
+    longitude: -79.974,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "08:00",
+    closes: "17:00",
+  },
 };
 
 export default function HomePage() {
@@ -50,6 +85,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* HERO */}

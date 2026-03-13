@@ -66,27 +66,28 @@ export default function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-widest text-[#96C3E1] mb-5">
               Contact
             </h3>
-            <ul className="space-y-3 text-sm">
-              <li>
+            <address className="not-italic space-y-3 text-sm">
+              <div>
                 <a
                   href="mailto:info@cleancyclecarbon.com"
                   className="text-white/70 hover:text-white transition-colors duration-200 inline-block"
                 >
                   info@cleancyclecarbon.com
                 </a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a
-                  href="tel:3072640309"
+                  href="tel:+13072640309"
                   className="text-white/70 hover:text-white transition-colors duration-200 inline-block"
                 >
-                  307-264-0309
+                  (307) 264-0309
                 </a>
-              </li>
-              <li className="text-white/70 text-sm">
-                4287 Spruill Avenue, Suite 203, North Charleston, SC 29405
-              </li>
-            </ul>
+              </div>
+              <div className="text-white/70 text-sm">
+                4287 Spruill Avenue, Suite 203<br />
+                North Charleston, SC 29405
+              </div>
+            </address>
           </div>
         </div>
 

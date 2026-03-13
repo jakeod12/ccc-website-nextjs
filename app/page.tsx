@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     url: "https://cleancyclecarbon.com",
     images: [{ url: "/images/og-preview.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Facility" }],
   },
+  alternates: { canonical: "/" },
 };
 
 const organizationSchema = {
@@ -117,7 +118,7 @@ export default function HomePage() {
               { stat: "Multiple Projects", label: "In Active Development", icon: <IconPartner size={28} /> },
             ].map((item, i) => (
               <ScrollReveal key={item.stat} direction="up" delay={i * 0.1} className="px-2">
-                <div className="flex justify-center mb-3 text-[#96C3E1]/70">
+                <div className="flex justify-center mb-3 text-[#96C3E1]/70" aria-hidden="true">
                   {item.icon}
                 </div>
                 <div className="text-white font-bold text-xl sm:text-2xl lg:text-3xl leading-tight">{item.stat}</div>
@@ -253,7 +254,7 @@ export default function HomePage() {
                 </h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    CleanCycleCarbon's first facility operates at the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from the facility's operations and purifies it to FDA-registered, beverage-grade quality at commercial scale.
+                    CleanCycleCarbon&apos;s first facility operates at the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from the facility&apos;s operations and purifies it to FDA-registered, beverage-grade quality at commercial scale.
                   </p>
                   <p>
                     This is a working plant. It produces real product. It supplies real buyers. Lewiston proved the technology works at scale and established CleanCycleCarbon as an operational CO₂ supplier, not a concept.

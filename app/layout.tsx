@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "carbon recycling",
     "CleanCycleCarbon",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     siteName: "CleanCycleCarbon",
     type: "website",
@@ -61,8 +64,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} style={{ scrollBehavior: "smooth" }}>
       <body className="antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#0F2D5A] focus:text-white focus:rounded focus:text-sm focus:font-semibold"
+        >
+          Skip to main content
+        </a>
         <Nav />
-        <main className="pt-16">{children}</main>
+        <main id="main-content" className="pt-16">{children}</main>
         <Footer />
         <BackToTop />
         <Analytics />

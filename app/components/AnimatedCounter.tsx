@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { useInView, useSpring, useMotionValue, motion } from "framer-motion";
+import { useRef, useEffect, useSyncExternalStore } from "react";
+import { useInView, useSpring, useMotionValue } from "framer-motion";
 
 interface AnimatedCounterProps {
   target: number;
@@ -12,6 +12,10 @@ interface AnimatedCounterProps {
   decimals?: number;
 }
 
+const subscribe = () => () => {};
+const getSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export default function AnimatedCounter({
   target,
   suffix = "",
@@ -21,6 +25,7 @@ export default function AnimatedCounter({
   decimals = 0,
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
+  const isClient = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   const isInView = useInView(ref, { once: true, margin: "-40px" });
 
   const motionValue = useMotionValue(0);
@@ -46,9 +51,10 @@ export default function AnimatedCounter({
     return unsubscribe;
   }, [springValue, suffix, prefix, decimals]);
 
+  // Show target value for SSR/SEO, animate from 0 on client
   return (
     <span ref={ref} className={className}>
-      {prefix}0{suffix}
+      {isClient ? `${prefix}0${suffix}` : `${prefix}${target.toFixed(decimals)}${suffix}`}
     </span>
   );
 }

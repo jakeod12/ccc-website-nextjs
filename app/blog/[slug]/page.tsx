@@ -7,7 +7,6 @@ import ShareButtons from "../../components/ShareButtons";
 import {
   getAllArticles,
   getArticleBySlug,
-  type BlogArticle,
   type ContentBlock,
 } from "../lib";
 
@@ -37,6 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [article.author],
       images: [{ url: article.heroImage, width: 1200, height: 630, alt: article.title }],
     },
+    alternates: { canonical: `/blog/${article.slug}` },
   };
 }
 

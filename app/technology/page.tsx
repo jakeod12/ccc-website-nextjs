@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "../components/ScrollReveal";
-import AnimatedCounter from "../components/AnimatedCounter";
 import ProcessFlow from "../components/ProcessFlow";
 
 export const metadata: Metadata = {
@@ -16,6 +15,7 @@ export const metadata: Metadata = {
     url: "https://cleancyclecarbon.com/technology",
     images: [{ url: "/images/technology-diagram.png", width: 1200, height: 630, alt: "CleanCycleCarbon Technology" }],
   },
+  alternates: { canonical: "/technology" },
 };
 
 const serviceSchema = {
@@ -30,6 +30,37 @@ const serviceSchema = {
   description:
     "Patent-pending cryogenic CO₂ purification process that captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality.",
   serviceType: "Carbon Capture and CO₂ Purification",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is cryogenic CO₂ purification?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cryogenic CO₂ purification uses low temperatures to separate CO₂ from contaminants in industrial emissions. CleanCycleCarbon's patent-pending process purifies raw CO₂ to FDA-registered, beverage-grade quality without chemical reagents.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What purity level does CleanCycleCarbon's CO₂ meet?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "CleanCycleCarbon produces CO₂ that meets FDA food-grade registration, beverage-grade purity standards suitable for carbonation, and industrial-grade specifications.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can the technology work with different emissions sources?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. CleanCycleCarbon's technology is feedstock agnostic and captures CO₂ from multiple types of industrial emissions including fermentation, combustion, and biological processes.",
+      },
+    },
+  ],
 };
 
 const howItWorksItems = [
@@ -77,6 +108,10 @@ export default function TechnologyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* HERO */}
@@ -141,7 +176,7 @@ export default function TechnologyPage() {
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.1}>
                 <p className="text-gray-700 leading-relaxed mb-10 text-lg">
-                  CleanCycleCarbon's process captures CO₂ from an industrial emissions source and runs it through a proprietary cryogenic purification system. At low temperatures, CO₂ separates from contaminants and is processed into a high-purity liquid or gaseous product that meets FDA and food-grade specifications.
+                  CleanCycleCarbon&apos;s process captures CO₂ from an industrial emissions source and runs it through a proprietary cryogenic purification system. At low temperatures, CO₂ separates from contaminants and is processed into a high-purity liquid or gaseous product that meets FDA and food-grade specifications.
                 </p>
               </ScrollReveal>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -206,7 +241,7 @@ export default function TechnologyPage() {
                 </div>
                 <h3 className="text-white font-semibold text-lg mb-3">Industrial-Grade Foundation</h3>
                 <p className="text-[#96C3E1]/90 leading-relaxed">
-                  Cryogenic separation is a mature, industrial-grade approach used across the gas processing industry. CleanCycleCarbon's innovation is in how we apply it specifically to CO₂ capture and purification at distributed, on-site deployments.
+                  Cryogenic separation is a mature, industrial-grade approach used across the gas processing industry. CleanCycleCarbon&apos;s innovation is in how we apply it specifically to CO₂ capture and purification at distributed, on-site deployments.
                 </p>
               </div>
             </ScrollReveal>

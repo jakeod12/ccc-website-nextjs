@@ -10,6 +10,7 @@ export const metadata: Metadata = {
       "Contact CleanCycleCarbon to discuss CO₂ supply, investment opportunities, or hosting a capture project at your facility.",
     url: "https://cleancyclecarbon.com/contact",
   },
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactLayout({

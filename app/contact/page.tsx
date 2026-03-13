@@ -199,6 +199,25 @@ function ContactForm() {
   );
 }
 
+function ContactFormSkeleton() {
+  const barClass = "h-12 rounded-lg bg-gray-200 animate-pulse";
+  return (
+    <div className="space-y-6" aria-label="Loading contact form">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className={barClass} />
+        <div className={barClass} />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className={barClass} />
+        <div className={barClass} />
+      </div>
+      <div className={barClass} />
+      <div className="h-32 rounded-lg bg-gray-200 animate-pulse" />
+      <div className="h-12 w-40 rounded-lg bg-gray-200 animate-pulse" />
+    </div>
+  );
+}
+
 export default function ContactPage() {
   return (
     <>
@@ -229,7 +248,7 @@ export default function ContactPage() {
             <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 shadow-lg ring-1 ring-gray-100">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#0F2D5A] mb-2">Send Us a Message</h2>
               <p className="text-gray-600 mb-8">Fill out the form below and our team will respond within one business day.</p>
-              <Suspense fallback={null}>
+              <Suspense fallback={<ContactFormSkeleton />}>
                 <ContactForm />
               </Suspense>
             </div>

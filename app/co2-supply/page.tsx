@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: "https://cleancyclecarbon.com/co2-supply",
     images: [{ url: "/images/supply-chain.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon CO₂ Supply" }],
   },
+  alternates: { canonical: "/co2-supply" },
 };
 
 const productSchema = {
@@ -116,7 +117,7 @@ export default function CO2SupplyPage() {
               <ScrollReveal key={item.title} direction="up" delay={i * 0.08}>
                 <div className="group bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-[#96C3E1]/50 h-full">
                   <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#0F2D5A]/5 mb-5 group-hover:bg-[#0F2D5A]/10 transition-colors duration-300">
-                    <span className="text-3xl">{item.icon}</span>
+                    <span className="text-3xl" role="img" aria-hidden="true">{item.icon}</span>
                   </div>
                   <h3 className="font-bold text-[#0F2D5A] text-lg mb-3">{item.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
@@ -205,7 +206,7 @@ export default function CO2SupplyPage() {
           <ScrollReveal direction="up" delay={0.1}>
             <div className="space-y-5 text-gray-700 text-lg leading-relaxed">
               <p>
-                CleanCycleCarbon operates on-site at industrial host facilities. We capture CO₂ from the facility's emissions, purify it using our proprietary cryogenic process, and make it available to commercial buyers as a certified product.
+                CleanCycleCarbon operates on-site at industrial host facilities. We capture CO₂ from the facility&apos;s emissions, purify it using our proprietary cryogenic process, and make it available to commercial buyers as a certified product.
               </p>
               <p>
                 Current supply comes from the Lewiston, NC facility. Additional capacity is in development. As we bring new capture projects online, supply grows with it.

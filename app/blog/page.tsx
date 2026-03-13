@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       "Insights on CO₂ capture, purification, and the beverage grade CO₂ market from the CleanCycleCarbon team.",
     url: "https://cleancyclecarbon.com/blog",
   },
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogPage() {
@@ -47,7 +48,7 @@ export default function BlogPage() {
               No articles yet. Check back soon.
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={`grid grid-cols-1 gap-8 ${articles.length === 1 ? "max-w-lg mx-auto" : articles.length === 2 ? "md:grid-cols-2 max-w-5xl mx-auto" : "md:grid-cols-2 lg:grid-cols-3"}`}>
               {articles.map((article, i) => (
                 <ScrollReveal key={article.slug} direction="up" delay={i * 0.1}>
                   <Link

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     url: "https://cleancyclecarbon.com/about",
     images: [{ url: "/images/team-bg.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Team" }],
   },
+  alternates: { canonical: "/about" },
 };
 
 const orgSchema = {

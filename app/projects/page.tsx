@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: "https://cleancyclecarbon.com/projects",
     images: [{ url: "/images/facility-golden-hour.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Lewiston NC Facility" }],
   },
+  alternates: { canonical: "/projects" },
 };
 
 const serviceSchema = {
@@ -222,7 +223,7 @@ export default function ProjectsPage() {
                   <div className="relative w-full h-full rounded-xl overflow-hidden shadow-md ring-1 ring-black/5 group cursor-pointer">
                     <Image
                       src={`/images/${img.file}`}
-                      alt="CleanCycleCarbon facility photo"
+                      alt={`CleanCycleCarbon facility — ${img.caption}`}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
@@ -273,7 +274,7 @@ export default function ProjectsPage() {
                       { icon: "📋", label: "Contracts in progress" },
                     ].map((item, i) => (
                       <div key={i} className="flex items-center gap-4">
-                        <span className="text-xl flex-shrink-0 w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">{item.icon}</span>
+                        <span className="text-xl flex-shrink-0 w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center" role="img" aria-hidden="true">{item.icon}</span>
                         <span className="text-white font-medium">{item.label}</span>
                       </div>
                     ))}

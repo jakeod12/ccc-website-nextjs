@@ -32,7 +32,7 @@ const serviceSchema = {
 };
 
 const galleryImages = [
-  { file: "vapor-action.jpg", caption: "Facility Overview" },
+  { file: "facility-overview.jpg", caption: "Facility Overview" },
   { file: "first-delivery.jpg", caption: "First CO₂ Delivery" },
   { file: "vapor-action.jpg", caption: "Purification in Action" },
   { file: "hose-connection.jpg", caption: "Product Loading" },

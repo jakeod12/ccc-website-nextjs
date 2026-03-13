@@ -122,9 +122,13 @@ export default function Footer() {
           <p className="text-xs text-white/35">
             &copy; {new Date().getFullYear()} CleanCycleCarbon. All rights reserved.
           </p>
-          <p className="text-xs text-white/25 tracking-wide">
-            Decarbonizing the supply chain.
-          </p>
+          <div className="flex items-center gap-4 text-xs text-white/25">
+            <Link href="/privacy" className="hover:text-white/50 transition-colors duration-200">
+              Privacy Policy
+            </Link>
+            <span>·</span>
+            <span className="tracking-wide">Decarbonizing the supply chain.</span>
+          </div>
         </div>
       </div>
     </footer>

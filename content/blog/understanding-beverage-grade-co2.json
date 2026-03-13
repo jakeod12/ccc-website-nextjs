@@ -1,0 +1,100 @@
+{
+  "slug": "understanding-beverage-grade-CO₂",
+  "title": "Understanding Beverage Grade CO₂: What It Takes to Meet the Standard",
+  "description": "Beverage grade CO₂ is one of the most tightly regulated industrial gases in the market. Here is what the spec actually requires and why most CO₂ sources struggle to meet it.",
+  "author": "Jake O'Donnell",
+  "date": "2026-03-10",
+  "readTime": "5 min read",
+  "category": "Industry Insights",
+  "tags": [
+    "CO₂",
+    "beverage-grade",
+    "purification",
+    "food-safety"
+  ],
+  "heroImage": "/images/facility.jpg",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "If you have spent any time in the CO₂ industry, you have heard the term \"beverage grade\" thrown around. It sounds simple enough. CO₂ that is clean enough to put in a drink. But the reality is far more technical, and the gap between raw CO₂ and beverage grade CO₂ is where most projects either succeed or fail."
+    },
+    {
+      "type": "heading",
+      "text": "What \"Beverage Grade\" Actually Means",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Beverage grade CO₂ must meet the International Society of Beverage Technologists (ISBT) specification. This is the gold standard for any CO₂ that will contact food or drink. The spec covers purity, moisture, and a long list of contaminant thresholds. CO₂ purity must be at or above 99.9%, and most buyers want to see 99.99% or better."
+    },
+    {
+      "type": "paragraph",
+      "text": "But purity alone does not tell the whole story. The ISBT spec sets maximum allowable limits for dozens of individual compounds. Total sulfur must be below 0.1 ppm. Total hydrocarbons must be below 20 ppm as methane equivalent. Acetaldehyde must be under 0.2 ppm. Ammonia under 2.5 ppm. Moisture under 20 ppm. These are not suggestions. If your CO₂ fails any single parameter, it is not beverage grade. Period."
+    },
+    {
+      "type": "heading",
+      "text": "Why the Source Matters",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "CO₂ is CO₂, right? Not exactly. The contaminant profile of raw CO₂ depends entirely on where it comes from. CO₂ from an ethanol plant is relatively clean. The fermentation process produces a high purity stream with predictable impurities. CO₂ from an ammonia plant or a hydrogen reformer carries different baggage. And CO₂ captured from biogas or renewable natural gas (RNG) upgrading? That is a whole different animal."
+    },
+    {
+      "type": "paragraph",
+      "text": "RNG upgrader off gas contains CO₂, but it also contains methane, volatile organic compounds, siloxanes, and hydrogen sulfide. The specific contaminant mix depends on the feedstock. Dairy digesters produce different compounds than landfill gas. Food waste digesters are different from both. You cannot design a one size fits all purification system and expect it to hit ISBT spec on every source. You need to understand the chemistry of what you are working with."
+    },
+    {
+      "type": "heading",
+      "text": "The Purification Challenge",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Getting from raw captured CO₂ to beverage grade is a multi step process. At CleanCycleCarbon, our approach starts with removing bulk contaminants. Water, hydrogen sulfide, and heavy hydrocarbons come out first through a series of adsorbent beds and condensation stages. This gets you to what the industry sometimes calls \"technical grade\" CO₂, which is maybe 99.5% pure. Useful for some industrial applications, but nowhere close to beverage grade."
+    },
+    {
+      "type": "paragraph",
+      "text": "The real work happens in the polishing stages. Trace sulfur compounds, aromatics, and light hydrocarbons all need to come down to parts per billion levels. This is where most purification systems fall short. Standard activated carbon beds can handle some of these, but they saturate quickly and require frequent change outs. Catalytic oxidation can deal with certain organics but creates other byproducts if not properly controlled."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our patent pending hydrocarbon removal technology was designed specifically for this problem. Traditional approaches were developed for cleaner CO₂ streams from ethanol and ammonia plants. We built our process from the ground up to handle the more complex contaminant profiles that come with RNG and biogas sources. That is a critical distinction because the market is shifting toward biogenic CO₂, and purification technology needs to keep up."
+    },
+    {
+      "type": "heading",
+      "text": "Cryogenic Purification: The Final Step",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "After the polishing stages, the CO₂ goes through cryogenic purification. This is where you liquify the CO₂ and use distillation to remove the last traces of non condensable gases like nitrogen and oxygen. Cryogenic processing also serves a practical purpose: beverage grade CO₂ is stored and transported as a liquid, so you need to liquify it anyway. Doing the final purification at the same stage is efficient."
+    },
+    {
+      "type": "paragraph",
+      "text": "The output from a well designed cryogenic system is CO₂ at 99.99% purity or higher, with all ISBT parameters well within spec. But \"well designed\" is doing heavy lifting in that sentence. Cryogenic systems are sensitive to upstream upsets. If your pre purification stages let a slug of moisture or H2S through, it can freeze out in the cold box and cause operational problems. The entire system has to work together."
+    },
+    {
+      "type": "heading",
+      "text": "Testing and Verification",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Meeting the spec once is not enough. Beverage grade CO₂ buyers require ongoing third party testing, typically from labs like Airgas or Praxair that specialize in gas analysis. Testing happens at regular intervals and covers the full ISBT parameter list. You also need robust quality management systems and documentation. Major beverage companies will audit your facility before they sign a supply agreement. They want to see that your process is not just capable of hitting spec, but that it does so consistently."
+    },
+    {
+      "type": "heading",
+      "text": "Why This Matters Now",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The U.S. has faced recurring CO₂ shortages over the past several years. When ammonia plants go down for maintenance or ethanol production dips seasonally, the entire beverage supply chain feels it. The 2022 and 2023 shortages were particularly acute. Prices spiked, smaller distributors were cut off, and some food processors had to reduce production."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding new domestic sources of beverage grade CO₂ is not just a business opportunity. It is an infrastructure need. But those new sources only matter if the CO₂ actually meets spec. Capturing carbon is step one. Purifying it to a level that a Coca Cola bottling plant will accept is the real challenge. That is the problem we built CleanCycleCarbon to solve, and it is what we focus on every day."
+    }
+  ]
+}

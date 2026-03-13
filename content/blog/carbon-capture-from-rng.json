@@ -1,0 +1,115 @@
+{
+  "slug": "carbon-capture-from-rng",
+  "title": "Carbon Capture from Renewable Natural Gas: An Untapped CO₂ Source",
+  "description": "RNG upgraders produce a concentrated CO₂ stream that is almost always vented. Capturing and purifying this byproduct is one of the most practical ways to add new domestic CO₂ supply.",
+  "author": "Jake O'Donnell",
+  "date": "2026-03-07",
+  "readTime": "5 min read",
+  "category": "Technology",
+  "tags": ["carbon capture", "RNG", "renewable natural gas", "CO₂ supply", "biogas"],
+  "heroImage": "/images/facility-golden-hour.jpg",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The U.S. CO₂ market has a supply problem. Most of our beverage and food grade CO₂ comes from a small number of large sources: ammonia plants, ethanol facilities, and natural gas processing. When any of those go offline for maintenance or market reasons, the entire downstream supply chain feels it. We saw this play out in 2022, and again in 2023. Prices spike, allocations get cut, and smaller buyers get left without product."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meanwhile, there is a growing network of facilities across the country that produce a concentrated CO₂ stream every single day and vent it straight into the atmosphere. These are renewable natural gas upgraders, and the CO₂ they release represents one of the most practical, underutilized opportunities to add new domestic supply."
+    },
+    {
+      "type": "heading",
+      "text": "What Renewable Natural Gas Actually Is",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Renewable natural gas starts as biogas. Dairy farms, landfills, wastewater treatment plants, and food waste digesters all produce biogas through anaerobic digestion. This is a natural biological process where microorganisms break down organic material in the absence of oxygen, producing a gas that is roughly 50 to 65 percent methane and 35 to 50 percent CO₂, along with trace amounts of hydrogen sulfide, siloxanes, and other contaminants."
+    },
+    {
+      "type": "paragraph",
+      "text": "Raw biogas is useful for generating electricity on site, but it is not pipeline quality. To inject it into the natural gas grid or use it as vehicle fuel, you need to upgrade it. That means removing the CO₂, moisture, and contaminants to bring the methane content above 95 percent. The result is renewable natural gas, which is chemically identical to conventional natural gas but derived from organic waste rather than fossil sources."
+    },
+    {
+      "type": "heading",
+      "text": "The CO₂ Byproduct Nobody Talks About",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the part that matters for the CO₂ market. When an RNG upgrader strips CO₂ out of biogas to produce pipeline quality methane, that CO₂ has to go somewhere. In almost every operating RNG facility in the U.S. today, it goes into the air. The upgrader does its job, the methane goes into the pipeline, and the CO₂ stream gets vented from a stack."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is not a small volume. A mid size dairy RNG facility processing 3,000 to 5,000 standard cubic feet per minute of raw biogas can produce 30 to 80 tons per day of CO₂. A large landfill gas operation can produce significantly more. Across the hundreds of RNG projects operating or under development in the U.S., the total vented CO₂ volume is substantial."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CO₂ coming off these upgraders is already separated from the methane stream. It is not dilute flue gas at 4 to 12 percent concentration like you would find at a power plant. It is a concentrated stream, typically 95 percent CO₂ or higher depending on the upgrader technology. That concentration matters because it dramatically reduces the cost of capture. The hard part of carbon capture is usually the separation step. At an RNG facility, that step is already done."
+    },
+    {
+      "type": "heading",
+      "text": "Why This CO₂ Is Valuable",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Concentrated CO₂ from an RNG upgrader is not automatically ready for the beverage or food market. It still contains contaminants specific to the biogas source: hydrogen sulfide, volatile organic compounds, siloxanes from dairy or landfill feedstocks, and moisture. These all need to come out before the CO₂ can meet ISBT beverage grade specifications or other food safety standards."
+    },
+    {
+      "type": "paragraph",
+      "text": "But the starting point is favorable. You are beginning with a high concentration CO₂ stream at moderate pressure, produced continuously as long as the RNG facility is running. Compare that to post combustion capture from a power plant, where you are pulling dilute CO₂ out of a massive volume of flue gas. The thermodynamics and the economics are fundamentally different."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is also the biogenic angle. CO₂ captured from RNG upgraders is biogenic, meaning it comes from the natural carbon cycle rather than fossil sources. The methane in biogas was produced from organic material that absorbed CO₂ from the atmosphere as it grew. Capturing and utilizing the CO₂ byproduct from that process is about as circular as carbon gets. For buyers and end users who care about the origin of their CO₂, and increasingly they do, biogenic sourcing is a real differentiator."
+    },
+    {
+      "type": "heading",
+      "text": "How CleanCycleCarbon Approaches the Problem",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "At CleanCycleCarbon, we are focused specifically on capturing CO₂ from RNG upgrader backends and purifying it to beverage grade. Our systems are designed to co-locate at existing RNG facilities, tapping into the CO₂ stream that would otherwise be vented. We handle the purification, liquefaction, and storage on site, producing a product that meets ISBT spec and is ready for distribution."
+    },
+    {
+      "type": "paragraph",
+      "text": "The purification challenge with RNG derived CO₂ is real. Biogas contaminants are more complex and variable than what you see from cleaner sources like ethanol fermentation. That is exactly why we developed our patent pending hydrocarbon removal technology. Traditional purification systems were built for relatively clean CO₂ streams. We built ours for the harder feedstocks, because that is where the untapped supply is."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our approach is to work with the existing RNG industry, not compete with it. The RNG operator keeps doing what they do best: producing pipeline quality renewable natural gas. We add a revenue stream by capturing and monetizing the CO₂ that was previously a waste product. It is a partnership model, and it works because both sides benefit without either one taking on the other's core risk."
+    },
+    {
+      "type": "heading",
+      "text": "The Economics Make Sense",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Several factors line up to make RNG based CO₂ capture economically attractive. First, the CO₂ is already separated and concentrated, which eliminates the most expensive step in most carbon capture processes. Second, co-locating at an existing facility means you are leveraging infrastructure that is already permitted, built, and operating. Third, the 45Q tax credit provides $60 per ton for CO₂ that is captured and utilized, which meaningfully improves project returns."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the revenue side, beverage grade CO₂ commands premium pricing. The U.S. market has seen sustained tightness, with prices well above historical averages in many regions. When you combine product revenue with tax credits, the unit economics for RNG based CO₂ capture are compelling, particularly at facilities that produce 30 tons per day or more."
+    },
+    {
+      "type": "heading",
+      "text": "The Market Opportunity",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The RNG industry in the U.S. is growing quickly. The Coalition for Renewable Natural Gas tracks over 300 operational RNG facilities with hundreds more in development. Each one of these facilities produces a CO₂ stream. Today, virtually none of that CO₂ is captured. The total addressable volume across the existing and planned RNG fleet is measured in millions of tons per year."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the same time, demand for CO₂ continues to grow across beverage, food processing, agriculture, and industrial applications. The market needs new supply, and it needs that supply to be distributed geographically rather than concentrated in a few locations. RNG facilities are spread across the country, close to agricultural and population centers where CO₂ demand exists. The logistics work."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is not a theoretical opportunity. The CO₂ is being produced right now, at facilities that are already operating. The technology to capture and purify it exists. The market demand is real and growing. The question is not whether this CO₂ should be captured. It is how fast the industry can build out the infrastructure to do it. That is the work we are doing at CleanCycleCarbon, and we think the timing is right."
+    }
+  ]
+}

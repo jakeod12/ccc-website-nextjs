@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Understanding Beverage Grade CO₂: What It Takes to Meet the Standard",
+    "slug": "understanding-beverage-grade-CO₂",
+    "targetKeywords": ["beverage grade CO₂", "ISBT CO₂ specification", "CO₂ purification", "food grade CO₂ standards", "CO₂ purity requirements"],
+    "category": "Industry Insights",
+    "description": "A deep dive into what the ISBT beverage grade specification actually requires, why most CO₂ sources struggle to meet it, and what separates technical grade from beverage grade purification.",
+    "priority": 1
+  },
+  {
+    "topic": "Carbon Capture from Renewable Natural Gas: An Untapped CO₂ Source",
+    "slug": "carbon-capture-from-rng",
+    "targetKeywords": ["carbon capture RNG", "renewable natural gas CO₂", "RNG upgrader CO₂ byproduct", "biogas carbon capture", "CO₂ from biogas"],
+    "category": "Technology",
+    "description": "RNG upgraders produce a concentrated CO₂ stream as a byproduct that is typically vented. Here is why capturing and purifying that CO₂ is both economically viable and critical for domestic supply.",
+    "priority": 2
+  },
+  {
+    "topic": "The 2022 CO₂ Shortage: What It Exposed About America's Supply Chain",
+    "slug": "2022-co2-shortage-supply-chain",
+    "targetKeywords": ["CO₂ shortage 2022", "carbon dioxide supply crisis", "CO₂ supply chain", "beverage CO₂ shortage", "industrial CO₂ shortage"],
+    "category": "Industry Insights",
+    "description": "The 2022 CO₂ shortage left beverage producers scrambling and food processors cutting output. A breakdown of what went wrong, why it keeps happening, and what needs to change.",
+    "priority": 3
+  },
+  {
+    "topic": "Why Domestic CO₂ Supply Matters More Than Ever",
+    "slug": "why-domestic-co2-supply-matters",
+    "targetKeywords": ["domestic CO₂ supply", "US CO₂ production", "CO₂ supply security", "regional CO₂ sourcing", "CO₂ supply resilience"],
+    "category": "Market Analysis",
+    "description": "The U.S. depends on a handful of large centralized CO₂ sources. Distributed domestic production from biogenic sources can reduce volatility and strengthen the supply chain for every buyer.",
+    "priority": 4
+  },
+  {
+    "topic": "How On-Site CO₂ Capture Works: From Waste Gas to Usable Product",
+    "slug": "how-on-site-co2-capture-works",
+    "targetKeywords": ["on-site CO₂ capture", "CO₂ capture process", "how carbon capture works", "CO₂ recovery system", "distributed carbon capture"],
+    "category": "Technology",
+    "description": "A practical walkthrough of how on-site carbon capture systems take raw waste gas and turn it into purified, usable CO₂ product ready for industrial and beverage applications.",
+    "priority": 5
+  },
+  {
+    "topic": "45Q Tax Credits and Carbon Capture Economics: What Project Developers Need to Know",
+    "slug": "45q-tax-credits-carbon-capture-economics",
+    "targetKeywords": ["45Q tax credit", "carbon capture tax incentive", "45Q utilization credit", "carbon capture economics", "CCUS incentives"],
+    "category": "Market Analysis",
+    "description": "The 45Q tax credit is a significant driver for carbon capture projects. A clear explanation of utilization vs. storage credits, qualification thresholds, and how they affect project economics.",
+    "priority": 6
+  },
+  {
+    "topic": "Biogenic CO₂ vs. Fossil Derived CO₂: Why the Source Matters",
+    "slug": "biogenic-co2-vs-fossil-derived",
+    "targetKeywords": ["biogenic CO₂", "fossil CO₂ vs biogenic CO₂", "renewable CO₂", "carbon neutral CO₂", "CO₂ source comparison"],
+    "category": "Industry Insights",
+    "description": "Not all CO₂ is created equal from a sustainability perspective. Understanding the difference between biogenic and fossil derived CO₂ and why buyers increasingly care about the distinction.",
+    "priority": 7
+  },
+  {
+    "topic": "Food Grade vs. Beverage Grade CO₂: Understanding the Specifications",
+    "slug": "food-grade-vs-beverage-grade-CO₂",
+    "targetKeywords": ["food grade CO₂", "beverage grade CO₂ spec", "CO₂ quality grades", "ISBT CO₂ standard", "CO₂ purity grades"],
+    "category": "Industry Insights",
+    "description": "The terms food grade and beverage grade are often used interchangeably, but they are not the same. A clear breakdown of the different specification tiers and what applications each serves.",
+    "priority": 8
+  },
+  {
+    "topic": "Cryogenic Purification vs. Chemical Absorption: Choosing the Right CO₂ Cleanup Technology",
+    "slug": "cryogenic-purification-vs-chemical-absorption",
+    "targetKeywords": ["cryogenic CO₂ purification", "chemical absorption CO₂", "amine scrubbing CO₂", "CO₂ purification methods", "carbon capture technology comparison"],
+    "category": "Technology",
+    "description": "Two dominant approaches to CO₂ purification serve different use cases. A technical comparison of cryogenic distillation and chemical absorption, including cost, purity, and operational tradeoffs.",
+    "priority": 9
+  },
+  {
+    "topic": "The Business Case for Distributed Carbon Capture",
+    "slug": "business-case-distributed-carbon-capture",
+    "targetKeywords": ["distributed carbon capture", "small scale carbon capture", "modular CO₂ capture", "carbon capture business case", "decentralized CO₂ production"],
+    "category": "Market Analysis",
+    "description": "Large centralized plants dominate CO₂ supply today. Why smaller, distributed capture projects co-located at RNG facilities and digesters can deliver better economics and supply resilience.",
+    "priority": 10
+  },
+  {
+    "topic": "CO₂ in Agriculture and Greenhouse Applications: A Growing Market",
+    "slug": "co2-agriculture-greenhouse-applications",
+    "targetKeywords": ["CO₂ for greenhouses", "agricultural CO₂ use", "CO₂ enrichment growing", "greenhouse gas supplementation", "CO₂ agriculture market"],
+    "category": "Market Analysis",
+    "description": "CO₂ enrichment in greenhouses can boost crop yields 20 to 30 percent. As controlled environment agriculture scales, demand for reliable, affordable CO₂ supply is growing fast.",
+    "priority": 11
+  },
+  {
+    "topic": "Industrial CO₂ Market Outlook: Supply, Demand, and the Path Forward",
+    "slug": "industrial-co2-market-outlook",
+    "targetKeywords": ["CO₂ market outlook", "industrial CO₂ demand", "CO₂ market size", "carbon dioxide market forecast", "CO₂ industry trends"],
+    "category": "Market Analysis",
+    "description": "An analysis of the current U.S. industrial CO₂ market including supply concentration, demand growth across sectors, pricing trends, and where new supply will need to come from.",
+    "priority": 12
+  }
+]

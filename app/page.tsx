@@ -12,13 +12,13 @@ const linkedInPosts = linkedInPostsRaw as LinkedInPost[];
 export const metadata: Metadata = {
   title: "CO₂ Capture & Purification | CleanCycleCarbon",
   description:
-    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-certified, beverage-grade quality. Commercial scale. Operating now in Lewiston, NC.",
+    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality. Commercial scale. Operating now in Lewiston, NC.",
   openGraph: {
     title: "Carbon Capture That Works. Operating Now.",
     description:
-      "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-certified, beverage-grade quality. Commercial scale. Proven technology. Domestic supply.",
+      "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality. Commercial scale. Proven technology. Domestic supply.",
     url: "https://cleancyclecarbon.com",
-    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Facility" }],
+    images: [{ url: "/images/og-preview.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Facility" }],
   },
 };
 
@@ -29,12 +29,12 @@ const organizationSchema = {
   url: "https://cleancyclecarbon.com",
   logo: "https://cleancyclecarbon.com/images/ccc-logo.png",
   description:
-    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-certified, beverage-grade quality.",
+    "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality.",
   email: "info@cleancyclecarbon.com",
   telephone: "+13072640309",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "4287 Spruill Avenue",
+    streetAddress: "4287 Spruill Avenue, Suite 203",
     addressLocality: "North Charleston",
     addressRegion: "SC",
     postalCode: "29405",
@@ -81,7 +81,7 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.4}>
             <p className="text-lg sm:text-xl text-[#96C3E1]/90 max-w-2xl mx-auto mb-12 leading-relaxed">
-              CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-certified, beverage-grade quality. Commercial scale. Proven technology. Domestic supply.
+              CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality. Commercial scale. Proven technology. Domestic supply.
             </p>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.55}>
@@ -110,7 +110,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-8 text-center">
             {[
-              { stat: "FDA Certified", label: "Beverage Grade CO₂", icon: <IconFDA size={28} /> },
+              { stat: "FDA Registered", label: "Beverage Grade CO₂", icon: <IconFDA size={28} /> },
               { stat: "Patent Pending", label: "Cryogenic Purification Process", icon: <IconPatent size={28} /> },
               { stat: "Commercial Scale", label: "Operating Facility", icon: <IconOperations size={28} /> },
               { stat: "100% In-House", label: "Technology and IP", icon: <IconDomestic size={28} /> },
@@ -133,19 +133,19 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-8">
-              The CO₂ Supply Chain Is Broken
+              The CO₂ Supply Chain Is Under Pressure
             </h2>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.15}>
             <div className="prose prose-lg text-gray-700 max-w-none space-y-5">
               <p>
-                CO₂ is not optional. It carbonates beverages, chills food, welds steel, and preserves pharmaceuticals. Every one of those industries depends on a continuous, reliable supply. And that supply has a structural problem.
+                CO₂ is essential. It carbonates beverages, chills food, welds steel, and preserves pharmaceuticals. Every one of those industries depends on a continuous, reliable supply, and that supply is under increasing strain.
               </p>
               <p>
-                Most commercial CO₂ is a byproduct of industrial processes: ammonia production, ethanol fermentation, natural gas processing. When those industries slow down, CO₂ supply disappears. The 2022 CO₂ shortage disrupted food production and beverage distribution across the country. It was not an anomaly. It was a preview.
+                Most commercial CO₂ is a byproduct of industrial processes: ammonia production, ethanol fermentation, natural gas processing. When those industries slow down, CO₂ supply tightens. The 2022 CO₂ shortage disrupted food production and beverage distribution across the country, highlighting the need for new domestic sources.
               </p>
               <p>
-                Domestic supply is geographically concentrated and controlled by a small number of suppliers. Buyers have limited alternatives and limited leverage. The market needs a new class of supplier: one that captures CO₂ directly from emissions sources, purifies it on-site, and delivers it reliably and locally.
+                Demand continues to grow while traditional supply remains geographically concentrated. CleanCycleCarbon is adding new domestic CO₂ capacity by capturing emissions at industrial facilities and purifying them on-site, complementing existing sources and strengthening the overall supply chain.
               </p>
             </div>
           </ScrollReveal>
@@ -159,11 +159,11 @@ export default function HomePage() {
             <ScrollReveal direction="right">
               <div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-6">
-                  Capture It. Purify It. Deliver It.
+                  Capture It. Purify It. Supply It.
                 </h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    CleanCycleCarbon captures CO₂ directly from industrial emissions sources and purifies it to the highest commercial standards. The result is FDA-certified, beverage-grade CO₂ available to food, beverage, and industrial buyers.
+                    CleanCycleCarbon captures CO₂ directly from industrial emissions sources and purifies it to the highest commercial standards. The result is FDA-registered, beverage-grade CO₂ supplied through distribution partners to food, beverage, and industrial end users.
                   </p>
                   <p>
                     Our technology deploys on-site at industrial facilities that emit CO₂ as part of their operations. We convert what would be a waste stream into a high-value product. The host facility benefits. The environment benefits. The buyer gets a local, reliable source they can count on.
@@ -253,7 +253,7 @@ export default function HomePage() {
                 </h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    CleanCycleCarbon's first facility operates at the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from the facility's operations and purifies it to FDA-certified, beverage-grade quality at commercial scale.
+                    CleanCycleCarbon's first facility operates at the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from the facility's operations and purifies it to FDA-registered, beverage-grade quality at commercial scale.
                   </p>
                   <p>
                     This is a working plant. It produces real product. It supplies real buyers. Lewiston proved the technology works at scale and established CleanCycleCarbon as an operational CO₂ supplier, not a concept.
@@ -341,7 +341,7 @@ export default function HomePage() {
                       src={person.img}
                       alt={person.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       style={
                         person.name === "Griff Walker"
                           ? { objectPosition: "center 35%" }

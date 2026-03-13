@@ -8,7 +8,7 @@ import ProcessFlow from "../components/ProcessFlow";
 export const metadata: Metadata = {
   title: "Technology | Patent-Pending CO₂ Purification",
   description:
-    "CleanCycleCarbon's patent-pending cryogenic CO₂ purification process captures and purifies industrial CO₂ emissions to FDA-certified, beverage-grade standards at commercial scale.",
+    "CleanCycleCarbon's patent-pending cryogenic CO₂ purification process captures and purifies industrial CO₂ emissions to FDA-registered, beverage-grade standards at commercial scale.",
   openGraph: {
     title: "In-House Technology. Commercial Scale. Proven Results.",
     description:
@@ -28,7 +28,7 @@ const serviceSchema = {
     url: "https://cleancyclecarbon.com",
   },
   description:
-    "Patent-pending cryogenic CO₂ purification process that captures industrial CO₂ emissions and purifies them to FDA-certified, beverage-grade quality.",
+    "Patent-pending cryogenic CO₂ purification process that captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality.",
   serviceType: "Carbon Capture and CO₂ Purification",
 };
 
@@ -254,7 +254,7 @@ export default function TechnologyPage() {
               <ScrollReveal direction="up" delay={0.2}>
                 <ul className="space-y-4">
                   {[
-                    "FDA food-grade certification",
+                    "FDA food-grade registration",
                     "Beverage-grade purity standards (suitable for carbonation of beverages)",
                     "Industrial-grade specifications",
                   ].map((item) => (

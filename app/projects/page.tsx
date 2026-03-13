@@ -95,7 +95,7 @@ export default function ProjectsPage() {
                 <div className="text-3xl sm:text-4xl font-bold text-[#0F2D5A]">
                   FDA
                 </div>
-                <p className="text-sm text-gray-500 mt-1 font-medium uppercase tracking-wider">Certified Product</p>
+                <p className="text-sm text-gray-500 mt-1 font-medium uppercase tracking-wider">Registered Product</p>
               </div>
             </div>
           </ScrollReveal>
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
                 </h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed text-lg mb-10">
                   <p>
-                    CleanCycleCarbon&apos;s first commercial facility is located on the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from Perdue&apos;s processing operations and purifies it using CleanCycleCarbon&apos;s proprietary cryogenic process to FDA-certified, beverage-grade quality.
+                    CleanCycleCarbon&apos;s first commercial facility is located on the Perdue Farms campus in Lewiston, North Carolina. The plant captures CO₂ from Perdue&apos;s processing operations and purifies it using CleanCycleCarbon&apos;s proprietary cryogenic process to FDA-registered, beverage-grade quality.
                   </p>
                 </div>
                 <h3 className="text-lg font-bold text-[#0F2D5A] mb-5 uppercase tracking-wider">What This Facility Represents</h3>
@@ -135,7 +135,7 @@ export default function ProjectsPage() {
                     },
                     {
                       label: "Certified product",
-                      desc: "Output meets FDA food-grade and beverage-grade certification requirements. The product enters the commercial supply chain as a certified, traceable input.",
+                      desc: "Output meets FDA food-grade and beverage-grade registration requirements. The product enters the commercial supply chain as a registered, traceable input.",
                     },
                     {
                       label: "First of a kind",

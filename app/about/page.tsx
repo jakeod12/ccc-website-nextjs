@@ -53,7 +53,7 @@ const orgSchema = {
       "@type": "Person",
       name: "Griff Walker",
       jobTitle: "Business Development Manager",
-      description: "Supports sales, marketing, procurement, and CO₂ logistics at the Lewiston facility.",
+      description: "Supports sales, marketing, procurement, and CO₂ operations at the Lewiston facility.",
     },
     {
       "@type": "Person",
@@ -163,10 +163,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">How We Operate</h2>
                 <div className="space-y-5 text-[#96C3E1] text-lg leading-relaxed">
                   <p>
-                    CleanCycleCarbon develops, builds, and operates on-site CO₂ capture and purification facilities at industrial host locations. We source emissions, engineer the capture system, install and commission the plant, and run ongoing operations. We sell the purified CO₂ directly to commercial buyers.
+                    CleanCycleCarbon develops, builds, and operates on-site CO₂ capture and purification facilities at industrial host locations. We source emissions, engineer the capture system, install and commission the plant, and run ongoing operations. We supply purified CO₂ through established distribution partners to commercial end users.
                   </p>
                   <p>
-                    We are not a consulting firm. We are not a technology licensor. We are an operator. We own the asset, run the plant, and deliver the product.
+                    We are not a consulting firm. We are not a technology licensor. We are an operator. We own the asset, run the plant, and supply the product through distribution partners.
                   </p>
                 </div>
               </div>
@@ -211,7 +211,7 @@ export default function AboutPage() {
                 name: "Griff Walker",
                 title: "Business Development Manager",
                 img: "/images/griff-walker.jpg",
-                bio: "Griff joined CleanCycleCarbon in 2024, supporting sales, marketing, and procurement. He also plays a key role on the cross-functional delivery team overseeing CO₂ logistics at the Lewiston facility.",
+                bio: "Griff joined CleanCycleCarbon in 2024, supporting sales, marketing, and procurement. He also plays a key role on the cross-functional operations team overseeing CO₂ production at the Lewiston facility.",
               },
             ].map((person, i) => (
               <ScrollReveal key={person.name} direction="up" delay={i * 0.1}>
@@ -221,7 +221,7 @@ export default function AboutPage() {
                       src={person.img}
                       alt={person.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       style={
                         person.name === "Griff Walker" ? { objectPosition: "center 35%" } : undefined
                       }
@@ -274,7 +274,7 @@ export default function AboutPage() {
                       src={person.img}
                       alt={person.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       style={
                         person.name === "Dennis Shanklin"
                           ? { objectPosition: "center 35%" }

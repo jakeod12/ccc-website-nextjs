@@ -7,11 +7,11 @@ import AnimatedCounter from "../components/AnimatedCounter";
 export const metadata: Metadata = {
   title: "CO₂ Supply | Domestic Beverage-Grade CO₂",
   description:
-    "CleanCycleCarbon supplies FDA-certified, beverage-grade CO₂ to food, beverage, and industrial buyers. Domestic. Reliable. Commercial scale.",
+    "CleanCycleCarbon supplies FDA-registered, beverage-grade CO₂ to food, beverage, and industrial buyers. Domestic. Reliable. Commercial scale.",
   openGraph: {
     title: "Domestic CO₂ You Can Count On",
     description:
-      "FDA-certified. Beverage grade. Produced in the US from captured industrial emissions. CleanCycleCarbon supplies reliable domestic CO₂.",
+      "FDA-registered. Beverage grade. Produced in the US from captured industrial emissions. CleanCycleCarbon supplies reliable domestic CO₂.",
     url: "https://cleancyclecarbon.com/co2-supply",
     images: [{ url: "/images/supply-chain.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon CO₂ Supply" }],
   },
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
-  name: "FDA-Certified Beverage-Grade CO₂",
+  name: "FDA-Registered Beverage-Grade CO₂",
   description:
-    "CleanCycleCarbon supplies FDA-certified, beverage-grade CO₂ captured and purified from industrial emissions sources. Domestic. Reliable. Commercial scale.",
+    "CleanCycleCarbon supplies FDA-registered, beverage-grade CO₂ captured and purified from industrial emissions sources. Domestic. Reliable. Commercial scale.",
   brand: {
     "@type": "Brand",
     name: "CleanCycleCarbon",
@@ -66,7 +66,7 @@ export default function CO2SupplyPage() {
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.15}>
             <p className="text-xl sm:text-2xl text-[#96C3E1] max-w-2xl mx-auto leading-relaxed">
-              FDA-certified. Beverage grade. Produced in the US from captured industrial emissions.
+              FDA-registered. Beverage grade. Produced in the US from captured industrial emissions.
             </p>
           </ScrollReveal>
         </div>
@@ -199,7 +199,7 @@ export default function CO2SupplyPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-8">
-              Direct from Capture to Customer
+              From Capture to Market
             </h2>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.1}>
@@ -211,7 +211,7 @@ export default function CO2SupplyPage() {
                 Current supply comes from the Lewiston, NC facility. Additional capacity is in development. As we bring new capture projects online, supply grows with it.
               </p>
               <p>
-                Buyers can engage directly with CleanCycleCarbon for pricing, volume, and logistics.
+                CleanCycleCarbon works with established distribution partners to deliver CO₂ to commercial end users. Contact us to discuss supply availability.
               </p>
             </div>
           </ScrollReveal>
@@ -250,7 +250,7 @@ export default function CO2SupplyPage() {
           <ScrollReveal direction="up">
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Need a Reliable CO₂ Source?</h2>
             <p className="text-[#96C3E1] text-lg mb-8">
-              Contact us to discuss volume, specifications, and logistics.
+              Contact us to discuss volume, specifications, and supply options.
             </p>
             <Link
               href="/contact?role=CO₂%20Buyer"

@@ -84,7 +84,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-white/70 text-sm">
-                4287 Spruill Avenue, North Charleston, SC 29405
+                4287 Spruill Avenue, Suite 203, North Charleston, SC 29405
               </li>
             </ul>
           </div>

@@ -239,7 +239,7 @@ export default function HomePage() {
             <ScrollReveal direction="right" className="order-2 lg:order-1">
               <div className="relative h-80 lg:h-[28rem] rounded-xl overflow-hidden shadow-2xl group">
                 <Image
-                  src="/images/ccc-facility.jpg"
+                  src="/images/facility-golden-hour.jpg"
                   alt="CleanCycleCarbon Lewiston North Carolina facility"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

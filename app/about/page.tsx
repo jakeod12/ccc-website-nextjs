@@ -139,7 +139,7 @@ export default function AboutPage() {
           muted
           loop
           playsInline
-          poster="/images/facility.jpg"
+          poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source src="/videos/about-facility.mp4" type="video/mp4" />

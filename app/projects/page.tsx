@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "One facility operating at commercial scale in Lewiston, NC. Multiple CO₂ capture projects in active development.",
     url: "https://cleancyclecarbon.com/projects",
-    images: [{ url: "/images/ccc-facility.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Lewiston NC Facility" }],
+    images: [{ url: "/images/facility-golden-hour.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Lewiston NC Facility" }],
   },
 };
 
@@ -32,7 +32,7 @@ const serviceSchema = {
 };
 
 const galleryImages = [
-  { file: "ccc-facility.jpg", caption: "Facility Overview" },
+  { file: "facility-golden-hour.jpg", caption: "Facility Overview" },
   { file: "first-delivery.jpg", caption: "First CO₂ Delivery" },
   { file: "vapor-action.jpg", caption: "Purification in Action" },
   { file: "hose-connection.jpg", caption: "Product Loading" },
@@ -163,7 +163,7 @@ export default function ProjectsPage() {
               <div className="space-y-4 lg:sticky lg:top-24">
                 <div className="relative h-72 sm:h-80 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
                   <Image
-                    src="/images/ccc-facility.jpg"
+                    src="/images/facility-golden-hour.jpg"
                     alt="CleanCycleCarbon Lewiston NC facility exterior"
                     fill
                     className="object-cover"

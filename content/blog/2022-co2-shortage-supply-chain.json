@@ -1,0 +1,118 @@
+{
+  "slug": "2022-co2-shortage-supply-chain",
+  "title": "The 2022 CO₂ Shortage: What It Exposed About America's Supply Chain",
+  "description": "The 2022 CO₂ shortage left beverage producers scrambling and food processors cutting output. A breakdown of what went wrong, why it keeps happening, and what needs to change.",
+  "author": "Jake O'Donnell",
+  "date": "2026-03-14",
+  "readTime": "6 min read",
+  "category": "Industry Insights",
+  "tags": ["CO₂ shortage", "supply chain", "beverage CO₂", "industrial CO₂", "domestic supply"],
+  "heroImage": "/images/supply-chain.jpg",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The summer of 2022 was a stress test for the U.S. CO₂ supply chain, and the supply chain failed it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beverage producers saw allocations cut. Distributors rationed product. Craft breweries and small bottlers, the ones without the buying power to lock in long-term contracts, were left scrambling. Prices spiked in some regions by 50 percent or more. The shortage touched beverage, food processing, dry ice production, and cold chain logistics from coast to coast."
+    },
+    {
+      "type": "paragraph",
+      "text": "This was not a freak event. It was a predictable failure of a supply chain that was never designed with resilience in mind."
+    },
+    {
+      "type": "heading",
+      "text": "What Actually Happened",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The 2022 shortage had several contributing factors, but the root cause was the same one that drives every CO₂ crunch: U.S. industrial CO₂ supply is highly concentrated in a small number of large sources, and those sources are correlated."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of the CO₂ sold commercially in the U.S. comes from ammonia manufacturing, ethanol production, and natural gas processing. These are not independent sources. They are interconnected with commodity markets, feedstock prices, and seasonal production cycles."
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2022, two things happened simultaneously. High natural gas prices made ammonia production less economic, leading several manufacturers to curtail output or shut down plants for extended periods. At the same time, the ethanol industry was still recovering from pandemic-related demand destruction and had not fully ramped back to pre-2020 production levels. Multiple large CO₂ sources pulled back at the same time, with no backup."
+    },
+    {
+      "type": "paragraph",
+      "text": "There was no buffer. The U.S. CO₂ supply chain has very limited storage relative to demand. CO₂ is typically produced and consumed in a tight just-in-time loop. When supply tightens, buyers feel it almost immediately."
+    },
+    {
+      "type": "heading",
+      "text": "Who Got Hit Hardest",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The shortage hit buyers without scale or leverage the hardest. Large national beverage brands have long-term supply contracts and dedicated CO₂ infrastructure. When allocations get cut, the big buyers have the relationships and purchasing power to stay near the front of the line."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mid-size and small buyers do not. Craft breweries. Regional bottlers. Food processors relying on CO₂ for modified atmosphere packaging or cooling. These buyers operate on shorter contract cycles and purchase at market rates. In a shortage, they are the first to face rationed supply and the last to return to normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "The geographic distribution of the problem made it worse. CO₂ is expensive to transport. Most of it moves as a liquid in insulated tankers, and the economics only work over relatively short distances. A shortage in one region cannot easily be solved by pulling supply from another. Regional supply chains are semi-isolated by logistics, which means regional imbalances persist longer than they should."
+    },
+    {
+      "type": "heading",
+      "text": "Why This Keeps Happening",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "This was not 2022's first CO₂ shortage. There was a significant shortage in 2018, driven by simultaneous plant shutdowns and scheduled maintenance across multiple producers. In the U.S., regional tightness has been a recurring problem for years, particularly in the Southeast and Midwest."
+    },
+    {
+      "type": "paragraph",
+      "text": "The structural cause is consistent: supply concentration combined with correlated production risk. When all your supply comes from a small number of large plants sensitive to the same commodity price signals, you are one bad quarter away from a market-wide shortage."
+    },
+    {
+      "type": "paragraph",
+      "text": "The ammonia dependency is particularly problematic. Ammonia producers make CO₂ as a byproduct. When ammonia economics are good, they run full and CO₂ supply is ample. When ammonia margins compress or natural gas prices climb, they curtail. The CO₂ market has no direct influence over that decision. We are downstream of an industry that was not built to serve us."
+    },
+    {
+      "type": "heading",
+      "text": "What Needs to Change",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The long-term fix is not better emergency response. It is structural: more sources, distributed across geographies, drawing on feedstocks that are not correlated with natural gas prices or ammonia demand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Biogenic CO₂ from ethanol fermentation was one of the few sources that kept producing through the 2022 shortage. That is because ethanol production economics are driven by corn prices and fuel demand, not natural gas. The CO₂ byproduct is a fixed output of fermentation. It keeps flowing regardless of what is happening in ammonia markets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The same logic applies to CO₂ from renewable natural gas upgraders. RNG production is driven by tipping fees and renewable fuel standard incentives, not commodity gas prices. The CO₂ stream is a fixed byproduct of the upgrading process. When an RNG facility is running, CO₂ is being produced whether or not anyone captures it."
+    },
+    {
+      "type": "paragraph",
+      "text": "That is the supply chain resilience opportunity. Not one more large centralized plant that adds another concentrated point of failure. Distributed capture at existing facilities, across multiple states, drawing on feedstocks that operate independently of the commodity cycles that have caused every major shortage in recent memory."
+    },
+    {
+      "type": "heading",
+      "text": "What CleanCycleCarbon Is Building",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Our facility in Lewiston, NC is built on exactly this premise. We co-locate at RNG facilities, capture the CO₂ stream that would otherwise be vented to the atmosphere, and purify it to FDA certified beverage grade using our patent pending cryogenic purification technology. The result is a new, reliable source of domestic CO₂ that is not tied to natural gas prices, ammonia production economics, or any of the variables that caused the 2022 shortage."
+    },
+    {
+      "type": "paragraph",
+      "text": "One facility does not solve the structural problem. But the model is replicable. Every RNG project in the U.S. is producing a CO₂ stream right now. If a meaningful fraction of that CO₂ were captured and purified rather than vented, the U.S. CO₂ market would look fundamentally different. More supply. Better distributed. From sources that do not track with natural gas prices or ammonia plant margins."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 2022 shortage exposed a fragile system. The response should not be to wait for the next one. The infrastructure to diversify the supply chain is available today. The feedstocks are already being produced. What the market needs is the capture and purification capacity to actually use them. That is the work we are doing at CleanCycleCarbon, one facility at a time."
+    }
+  ]
+}

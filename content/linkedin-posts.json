@@ -1,6 +1,15 @@
 [
   {
     "type": "company",
+    "title": "In 2022, beverage CO₂ prices spiked 50% in some regions. The same supply chain failure is still in place.",
+    "excerpt": "A breakdown of what actually caused the shortage, why it keeps happening, and what distributed domestic capture looks like as a structural fix.",
+    "date": "2026-03-14",
+    "url": "https://cleancyclecarbon.com/blog/2022-co2-shortage-supply-chain",
+    "impressions": 0,
+    "reactions": 0
+  },
+  {
+    "type": "company",
     "title": "This is what domestic CO₂ supply looks like when you build it from scratch",
     "excerpt": "CleanCycleCarbon captures CO₂ off the backend of renewable natural gas upgraders and purifies it to beverage grade. We operate one of only two facilities in the US doing this.",
     "date": "2026-03-04",

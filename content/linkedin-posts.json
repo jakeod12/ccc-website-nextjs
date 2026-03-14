@@ -1,38 +1,56 @@
 [
   {
-    "type": "company",
-    "title": "In 2022, beverage CO₂ prices spiked 50% in some regions. The same supply chain failure is still in place.",
-    "excerpt": "A breakdown of what actually caused the shortage, why it keeps happening, and what distributed domestic capture looks like as a structural fix.",
-    "date": "2026-03-14",
-    "url": "https://cleancyclecarbon.com/blog/2022-co2-shortage-supply-chain",
+    "type": "personal",
+    "title": "Website Launch Announcement",
+    "excerpt": "Website Launch Announcement",
+    "date": "2026-03-13",
+    "url": "https://www.linkedin.com/in/jake-o-donnell-80a6ab136/recent-activity/all/",
     "impressions": 0,
     "reactions": 0
   },
   {
     "type": "company",
-    "title": "This is what domestic CO₂ supply looks like when you build it from scratch",
-    "excerpt": "CleanCycleCarbon captures CO₂ off the backend of renewable natural gas upgraders and purifies it to beverage grade. We operate one of only two facilities in the US doing this.",
+    "title": "Supply chain angle — beverage grade CO2 demand growing",
+    "excerpt": "Supply chain angle — beverage grade CO2 demand growing",
+    "date": "2026-03-12",
+    "url": "https://www.linkedin.com/company/cleancyclecarbon/",
+    "impressions": 0,
+    "reactions": 0
+  },
+  {
+    "type": "company",
+    "title": "The US beverage grade CO₂ supply chain runs on a handful of aging ammonia plants and ethanol facilities.",
+    "excerpt": "The US beverage grade CO₂ supply chain runs on a handful of aging ammonia plants and ethanol facilities.",
+    "date": "2026-03-11",
+    "url": "https://www.linkedin.com/company/cleancyclecarbon/",
+    "impressions": 838,
+    "reactions": 28
+  },
+  {
+    "type": "personal",
+    "title": "What People Get Wrong about CO2 purification",
+    "excerpt": "What People Get Wrong about CO2 purification",
+    "date": "2026-03-11",
+    "url": "https://www.linkedin.com/in/jake-o-donnell-80a6ab136/recent-activity/all/",
+    "impressions": 0,
+    "reactions": 0
+  },
+  {
+    "type": "personal",
+    "title": "CO2 Education — What beverage grade CO2 actually requires",
+    "excerpt": "CO2 Education — What beverage grade CO2 actually requires",
+    "date": "2026-03-04",
+    "url": "https://www.linkedin.com/in/jake-o-donnell-80a6ab136/recent-activity/all/",
+    "impressions": 0,
+    "reactions": 0
+  },
+  {
+    "type": "company",
+    "title": "Company Launch Post — Who CCC is, what we do",
+    "excerpt": "Company Launch Post — Who CCC is, what we do",
     "date": "2026-03-04",
     "url": "https://www.linkedin.com/company/cleancyclecarbon/",
-    "impressions": 561,
-    "reactions": 15
-  },
-  {
-    "type": "personal",
-    "title": "Most people have no idea where the CO₂ in their beer comes from",
-    "excerpt": "The supply chain is thin. A handful of ammonia plants, some ethanol facilities, a few natural gas processors. When one goes down, prices spike and allocations get cut.",
-    "date": "2026-03-04",
-    "url": "https://www.linkedin.com/in/jake-o-donnell-80a6ab136/recent-activity/all/",
-    "impressions": 561,
-    "reactions": 15
-  },
-  {
-    "type": "personal",
-    "title": "The day we hit beverage grade",
-    "excerpt": "We celebrated, then got back to work. Because hitting the spec once is a milestone. Hitting it every day is the business.",
-    "date": "2026-02-28",
-    "url": "https://www.linkedin.com/in/jake-o-donnell-80a6ab136/recent-activity/all/",
-    "impressions": 113,
-    "reactions": 6
+    "impressions": 0,
+    "reactions": 0
   }
 ]

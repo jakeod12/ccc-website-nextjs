@@ -6,6 +6,8 @@ const navLinks = [
   { href: "/co2-supply", label: "CO₂ Supply" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -118,7 +120,38 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
+        {/* Newsletter Signup */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="max-w-md">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-[#96C3E1] mb-3">
+              Stay Updated
+            </h3>
+            <p className="text-sm text-white/60 mb-4">
+              Get project updates and industry insights from CleanCycleCarbon.
+            </p>
+            <form
+              action="/contact"
+              className="flex flex-col sm:flex-row gap-2"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="you@company.com"
+                required
+                className="flex-1 px-4 py-2.5 rounded-lg bg-white/10 border border-white/15 text-white placeholder-white/40 text-base focus:outline-none focus:ring-2 focus:ring-[#2D69B4] focus:border-transparent"
+              />
+              <input type="hidden" name="role" value="Partner" />
+              <button
+                type="submit"
+                className="px-5 py-2.5 bg-[#2D69B4] text-white text-sm font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-200 flex-shrink-0"
+              >
+                Get Updates
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/35">
             &copy; {new Date().getFullYear()} CleanCycleCarbon. All rights reserved.
           </p>

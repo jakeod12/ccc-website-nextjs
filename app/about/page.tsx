@@ -6,7 +6,7 @@ import ScrollReveal from "../components/ScrollReveal";
 export const metadata: Metadata = {
   title: "About | CleanCycleCarbon",
   description:
-    "CleanCycleCarbon is a carbon capture company founded in 2021. We develop, build, and operate CO₂ capture and purification facilities at industrial sites across the U.S.",
+    "CleanCycleCarbon is a carbon capture company that develops, builds, and operates CO₂ purification facilities at industrial sites across the U.S.",
   openGraph: {
     title: "Built from the Ground Up | CleanCycleCarbon",
     description:
@@ -93,6 +93,7 @@ export default function AboutPage() {
             alt="CleanCycleCarbon team and company background"
             fill
             priority
+            sizes="100vw"
             className="object-cover"
           />
         </div>
@@ -141,6 +142,7 @@ export default function AboutPage() {
           muted
           loop
           playsInline
+          preload="none"
           poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -155,6 +157,7 @@ export default function AboutPage() {
                   src="/images/facility-golden-hour.jpg"
                   alt="CleanCycleCarbon operates commercial CO₂ capture facilities"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D5A]/30 to-transparent" />
@@ -328,7 +331,7 @@ export default function AboutPage() {
             <h2 className="text-2xl sm:text-3xl font-bold text-[#0F2D5A] mb-6">Ready to work with us?</h2>
             <Link
               href="/contact"
-              className="inline-block px-10 py-4 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+              className="inline-block px-10 py-4 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
               Contact Us
             </Link>

@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cleancyclecarbon.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://cleancyclecarbon.com"),
   title: {
     default: "CleanCycleCarbon | Carbon Capture, Operating Now",
     template: "%s | CleanCycleCarbon",

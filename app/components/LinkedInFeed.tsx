@@ -76,6 +76,23 @@ export default function LinkedInFeed({ posts }: { posts: LinkedInPost[] }) {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 3);
 
+  if (sorted.length === 0) {
+    return (
+      <div className="text-center py-12">
+        <p className="text-[#96C3E1]/60 text-lg">No posts available. Follow us on LinkedIn for the latest updates.</p>
+        <a
+          href="https://www.linkedin.com/company/cleancyclecarbon/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-6 px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300"
+        >
+          <LinkedInIcon className="w-5 h-5" />
+          Follow CleanCycleCarbon
+        </a>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -135,7 +152,7 @@ export default function LinkedInFeed({ posts }: { posts: LinkedInPost[] }) {
           href="https://www.linkedin.com/company/cleancyclecarbon/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/30"
+          className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
         >
           <LinkedInIcon className="w-5 h-5" />
           Follow CleanCycleCarbon
@@ -144,7 +161,7 @@ export default function LinkedInFeed({ posts }: { posts: LinkedInPost[] }) {
           href="https://www.linkedin.com/in/jake-o-donnell-80a6ab136/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/30 text-white font-semibold rounded hover:bg-white hover:text-[#0F2D5A] transition-all duration-300 text-sm"
+          className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-white/30 text-white font-semibold rounded hover:bg-white hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 text-sm"
         >
           <LinkedInIcon className="w-4 h-4" />
           Connect with Jake O&apos;Donnell

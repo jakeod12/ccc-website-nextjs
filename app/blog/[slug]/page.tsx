@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${article.title} | CleanCycleCarbon`,
     description: article.description,
+    keywords: article.tags || [],
     openGraph: {
       title: article.title,
       description: article.description,
@@ -128,6 +129,34 @@ function renderBlock(block: ContentBlock, idx: number) {
   }
 }
 
+const AUTHORS: Record<string, { title: string; img: string; bio: string }> = {
+  "Jake O'Donnell": {
+    title: "Vice President",
+    img: "/images/jake-odonnell.jpg",
+    bio: "Mechanical engineer focused on maximizing operational efficiencies and driving technical execution at CleanCycleCarbon\u2019s commercial scale CO\u2082 capture facilities.",
+  },
+  "Erica Chase, PE": {
+    title: "President",
+    img: "/images/erica-chase.jpg",
+    bio: "Leads CleanCycleCarbon as President, overseeing strategic growth and project development across all CO\u2082 capture operations.",
+  },
+  "Hector Cumba, PhD": {
+    title: "Director of Process Design",
+    img: "/images/hector-cumba.jpg",
+    bio: "Recognized innovator in biosystems and process engineering who led the design of CleanCycleCarbon\u2019s CO\u2082 capture system.",
+  },
+  "Becky Atkinson": {
+    title: "Commercial Director",
+    img: "/images/becky-atkinson.jpg",
+    bio: "Environmental sustainability leader with over 25 years of combined industry and consulting experience in carbon capture and decarbonization.",
+  },
+  "Griff Walker": {
+    title: "Business Development Manager",
+    img: "/images/griff-walker.jpg",
+    bio: "Supports sales, marketing, procurement, and CO\u2082 operations at CleanCycleCarbon\u2019s Lewiston facility.",
+  },
+};
+
 export default async function BlogArticlePage({ params }: PageProps) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
@@ -136,7 +165,14 @@ export default async function BlogArticlePage({ params }: PageProps) {
   const allArticles = getAllArticles();
   const related = allArticles
     .filter((a) => a.slug !== article.slug)
+    .filter((a) => a.category === article.category || a.tags?.some((t) => article.tags?.includes(t)))
     .slice(0, 3);
+  // Fall back to any articles if no category/tag matches
+  const finalRelated = related.length > 0
+    ? related
+    : allArticles.filter((a) => a.slug !== article.slug).slice(0, 3);
+
+  const authorData = AUTHORS[article.author] || AUTHORS["Jake O'Donnell"];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -148,7 +184,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
     author: {
       "@type": "Person",
       name: article.author,
-      jobTitle: "Vice President",
+      jobTitle: authorData.title,
       worksFor: {
         "@type": "Organization",
         name: "CleanCycleCarbon",
@@ -232,24 +268,22 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 <div className="flex items-start gap-5">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-[#0F2D5A]/10">
                     <Image
-                      src="/images/jake-odonnell.jpg"
-                      alt="Jake O'Donnell"
+                      src={authorData.img}
+                      alt={article.author}
                       fill
+                      sizes="64px"
                       className="object-cover"
                     />
                   </div>
                   <div>
                     <p className="font-bold text-[#0F2D5A] text-lg">
-                      Jake O&apos;Donnell
+                      {article.author}
                     </p>
                     <p className="text-sm text-gray-500 mb-2">
-                      Vice President at CleanCycleCarbon
+                      {authorData.title} at CleanCycleCarbon
                     </p>
-                    <p className="text-sm text-gray-600">
-                      Mechanical engineer focused on maximizing operational
-                      efficiencies and driving technical execution at
-                      CleanCycleCarbon&apos;s commercial scale CO₂ capture
-                      facilities.
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      {authorData.bio}
                     </p>
                   </div>
                 </div>
@@ -266,11 +300,27 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 />
               </div>
             </ScrollReveal>
+
+            {/* Inline CTA */}
+            <ScrollReveal direction="up" delay={0.25}>
+              <div className="mt-10 bg-[#0F2D5A] rounded-2xl p-8 sm:p-10 text-center">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">Interested in working with us?</h3>
+                <p className="text-[#96C3E1] mb-6 max-w-lg mx-auto">
+                  Whether you need CO₂ supply, want to host a capture project, or are exploring investment, we&apos;d like to hear from you.
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg"
+                >
+                  Get in Touch
+                </Link>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
 
         {/* Related Articles */}
-        {related.length > 0 && (
+        {finalRelated.length > 0 && (
           <section className="py-16 px-4 bg-gray-50">
             <div className="max-w-7xl mx-auto">
               <ScrollReveal direction="up">
@@ -279,7 +329,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 </h2>
               </ScrollReveal>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {related.map((rel, i) => (
+                {finalRelated.map((rel, i) => (
                   <ScrollReveal key={rel.slug} direction="up" delay={i * 0.1}>
                     <Link
                       href={`/blog/${rel.slug}`}

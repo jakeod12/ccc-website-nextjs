@@ -27,8 +27,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "CleanCycleCarbon",
-  url: "https://www.cleancyclecarbon.com",
-  logo: "https://www.cleancyclecarbon.com/images/ccc-logo-white.png",
+  url: "https://cleancyclecarbon.com",
+  logo: "https://cleancyclecarbon.com/images/ccc-logo-white.png",
   description:
     "CleanCycleCarbon captures industrial CO₂ emissions and purifies them to FDA-registered, beverage-grade quality at commercial scale.",
   foundingDate: "2021",
@@ -55,8 +55,8 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "CleanCycleCarbon",
-  image: "https://www.cleancyclecarbon.com/images/facility-golden-hour.jpg",
-  url: "https://www.cleancyclecarbon.com",
+  image: "https://cleancyclecarbon.com/images/facility-golden-hour.jpg",
+  url: "https://cleancyclecarbon.com",
   telephone: "+1-307-264-0309",
   address: {
     "@type": "PostalAddress",
@@ -99,6 +99,7 @@ export default function HomePage() {
             muted
             loop
             playsInline
+            preload="none"
             poster="/images/facility-golden-hour.jpg"
             className="absolute inset-0 w-full h-full object-cover"
           >
@@ -115,7 +116,7 @@ export default function HomePage() {
             </p>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.25}>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.08] mb-8 tracking-tight">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.08] mb-8 tracking-tight">
               Carbon Capture That Works.<br />Operating Now.
             </h1>
           </ScrollReveal>
@@ -128,13 +129,13 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/technology"
-                className="px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
+                className="w-full sm:w-auto text-center px-8 py-4 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
               >
                 See Our Technology
               </Link>
               <Link
                 href="/contact"
-                className="px-8 py-3.5 border-2 border-white/80 text-white font-semibold rounded hover:bg-white hover:text-[#0F2D5A] transition-all duration-300"
+                className="w-full sm:w-auto text-center px-8 py-4 border-2 border-white/80 text-white font-semibold rounded hover:bg-white hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300"
               >
                 Partner With Us
               </Link>
@@ -148,7 +149,7 @@ export default function HomePage() {
       {/* STATS BAR */}
       <section className="bg-[#0F2D5A] py-16 md:py-20 border-t border-[#2D69B4]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8 text-center">
             {[
               { stat: "FDA Registered", label: "Beverage Grade CO₂", icon: <IconFDA size={28} /> },
               { stat: "Patent Pending", label: "Cryogenic Purification Process", icon: <IconPatent size={28} /> },
@@ -169,7 +170,7 @@ export default function HomePage() {
       </section>
 
       {/* THE PROBLEM */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-8">
@@ -193,7 +194,7 @@ export default function HomePage() {
       </section>
 
       {/* THE SOLUTION */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="right">
@@ -215,11 +216,12 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
             <ScrollReveal direction="left" delay={0.15}>
-              <div className="relative h-80 lg:h-[28rem] rounded-xl overflow-hidden shadow-2xl group">
+              <div className="relative h-64 sm:h-80 lg:h-[28rem] rounded-xl overflow-hidden shadow-2xl group">
                 <Image
                   src="/images/vapor-action.jpg"
                   alt="CO₂ capture operations at CleanCycleCarbon's Lewiston facility"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -264,7 +266,7 @@ export default function HomePage() {
           <ScrollReveal direction="up" delay={0.4}>
             <Link
               href="/technology"
-              className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/30"
+              className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
             >
               Learn More About Our Technology
             </Link>
@@ -273,15 +275,16 @@ export default function HomePage() {
       </section>
 
       {/* LEWISTON SHOWCASE */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ScrollReveal direction="right" className="order-2 lg:order-1">
-              <div className="relative h-80 lg:h-[28rem] rounded-xl overflow-hidden shadow-2xl group">
+              <div className="relative h-64 sm:h-80 lg:h-[28rem] rounded-xl overflow-hidden shadow-2xl group">
                 <Image
                   src="/images/facility-golden-hour.jpg"
                   alt="CleanCycleCarbon Lewiston North Carolina facility"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -301,7 +304,7 @@ export default function HomePage() {
                 </div>
                 <Link
                   href="/projects"
-                  className="inline-block mt-8 px-6 py-3 bg-[#0F2D5A] text-white font-semibold rounded hover:bg-[#2D69B4] transition-all duration-300"
+                  className="inline-block mt-8 px-6 py-3.5 bg-[#0F2D5A] text-white font-semibold rounded hover:bg-[#2D69B4] active:opacity-80 transition-all duration-300"
                 >
                   View Projects
                 </Link>
@@ -328,7 +331,7 @@ export default function HomePage() {
           <ScrollReveal direction="up" delay={0.3}>
             <Link
               href="/projects"
-              className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/30"
+              className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
             >
               View Projects
             </Link>
@@ -337,7 +340,7 @@ export default function HomePage() {
       </section>
 
       {/* LATEST FROM LINKEDIN */}
-      <section className="py-24 bg-[#0F2D5A]">
+      <section className="py-16 sm:py-24 bg-[#0F2D5A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal direction="up">
             <p className="text-[#96C3E1]/80 text-sm font-semibold tracking-[0.2em] uppercase text-center mb-4">
@@ -356,7 +359,7 @@ export default function HomePage() {
       </section>
 
       {/* TEAM */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-24 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] text-center mb-14">
@@ -376,7 +379,7 @@ export default function HomePage() {
             ].map((person, i) => (
               <ScrollReveal key={person.name} direction="up" delay={i * 0.08}>
                 <div className="group bg-white rounded-xl shadow-md hover:shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1">
-                  <div className="relative w-full h-48 overflow-hidden">
+                  <div className="relative w-full h-40 sm:h-48 overflow-hidden">
                     <Image
                       src={person.img}
                       alt={person.name}
@@ -406,7 +409,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA CARDS */}
-      <section className="py-24 bg-[#0F2D5A]">
+      <section className="py-16 sm:py-24 bg-[#0F2D5A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-14">
@@ -440,7 +443,7 @@ export default function HomePage() {
                   <p className="text-[#96C3E1]/90 leading-relaxed mb-8 text-sm flex-grow">{card.body}</p>
                   <Link
                     href={`/contact?role=${encodeURIComponent(card.role)}`}
-                    className="inline-block px-5 py-2.5 bg-[#2D69B4] text-white text-sm font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 self-start"
+                    className="inline-block px-5 py-2.5 bg-[#2D69B4] text-white text-sm font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 self-start"
                   >
                     {card.cta}
                   </Link>

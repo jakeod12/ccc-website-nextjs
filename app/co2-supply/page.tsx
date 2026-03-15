@@ -7,7 +7,7 @@ import AnimatedCounter from "../components/AnimatedCounter";
 export const metadata: Metadata = {
   title: "CO₂ Supply | Domestic Beverage-Grade CO₂",
   description:
-    "Need a reliable domestic source of food-grade or beverage-grade CO₂? CleanCycleCarbon supplies certified CO₂ to beverage, food, and industrial buyers across the U.S.",
+    "Need reliable domestic food-grade or beverage-grade CO₂? CleanCycleCarbon supplies certified CO₂ to beverage, food, and industrial buyers.",
   openGraph: {
     title: "Domestic CO₂ You Can Count On",
     description:
@@ -53,6 +53,7 @@ export default function CO2SupplyPage() {
           muted
           loop
           playsInline
+          preload="none"
           poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -117,7 +118,7 @@ export default function CO2SupplyPage() {
               <ScrollReveal key={item.title} direction="up" delay={i * 0.08}>
                 <div className="group bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-[#96C3E1]/50 h-full">
                   <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[#0F2D5A]/5 mb-5 group-hover:bg-[#0F2D5A]/10 transition-colors duration-300">
-                    <span className="text-3xl" role="img" aria-hidden="true">{item.icon}</span>
+                    <span className="text-3xl" role="img" aria-label={item.title}>{item.icon}</span>
                   </div>
                   <h3 className="font-bold text-[#0F2D5A] text-lg mb-3">{item.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
@@ -186,6 +187,7 @@ export default function CO2SupplyPage() {
                   src="/images/hose-connection.jpg"
                   alt="CO₂ supply connection at CleanCycleCarbon facility"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D5A]/40 to-transparent" />
@@ -220,7 +222,7 @@ export default function CO2SupplyPage() {
       </section>
 
       {/* INDUSTRIES WE SERVE */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <ScrollReveal direction="up">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-10 text-center">Industries We Serve</h2>
@@ -253,12 +255,20 @@ export default function CO2SupplyPage() {
             <p className="text-[#96C3E1] text-lg mb-8">
               Contact us to discuss volume, specifications, and supply options.
             </p>
-            <Link
-              href="/contact?role=CO₂%20Buyer"
-              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
-            >
-              Inquire About Supply
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact?role=CO₂%20Buyer"
+                className="w-full sm:w-auto text-center px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
+              >
+                Request a Quote
+              </Link>
+              <Link
+                href="/technology"
+                className="w-full sm:w-auto text-center px-10 py-4 border-2 border-white/60 text-white font-semibold rounded-lg hover:bg-white hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300"
+              >
+                View Our Technology
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>

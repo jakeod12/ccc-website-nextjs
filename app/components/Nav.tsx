@@ -14,6 +14,11 @@ const navLinks = [
   { href: "/about", label: "About" },
 ];
 
+const mobileNavLinks = [
+  ...navLinks,
+  { href: "/faq", label: "FAQ" },
+];
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -53,12 +58,12 @@ export default function Nav() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium relative group transition-colors duration-200 ${
+                className={`text-sm font-medium relative group px-2 py-2 transition-colors duration-200 ${
                   pathname === link.href
                     ? "text-[#96C3E1]"
                     : "text-white hover:text-[#96C3E1]"
@@ -83,7 +88,7 @@ export default function Nav() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-white p-2 rounded hover:bg-white/10 transition-colors"
+            className="md:hidden text-white p-3 rounded hover:bg-white/10 active:opacity-80 transition-colors"
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation"
             aria-expanded={open}
@@ -133,7 +138,7 @@ export default function Nav() {
             className="md:hidden overflow-hidden bg-[#0F2D5A]/98 backdrop-blur-md border-t border-[#2D69B4]/40"
           >
             <div className="px-4 pb-4 pt-2">
-              {navLinks.map((link, i) => (
+              {mobileNavLinks.map((link, i) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, x: -12 }}
@@ -143,7 +148,7 @@ export default function Nav() {
                   <Link
                     href={link.href}
                     onClick={() => setOpen(false)}
-                    className={`flex items-center py-3 text-sm font-medium border-b border-[#2D69B4]/20 transition-colors ${
+                    className={`flex items-center min-h-[44px] py-3 text-base font-medium border-b border-[#2D69B4]/20 transition-colors ${
                       pathname === link.href
                         ? "text-[#96C3E1]"
                         : "text-white hover:text-[#96C3E1]"
@@ -159,13 +164,13 @@ export default function Nav() {
               <motion.div
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: navLinks.length * 0.05 + 0.08 }}
+                transition={{ delay: mobileNavLinks.length * 0.05 + 0.08 }}
                 className="mt-4"
               >
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="block px-4 py-2 bg-[#2D69B4] text-white text-sm font-semibold rounded text-center hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all"
+                  className="block px-4 py-3 bg-[#2D69B4] text-white text-base font-semibold rounded text-center hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all"
                 >
                   Partner With Us
                 </Link>

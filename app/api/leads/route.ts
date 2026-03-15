@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const BD_TOOL_LEADS_URL = "https://bd-tool-nine.vercel.app/api/website-leads";
+const BD_TOOL_LEADS_URL = process.env.BD_TOOL_LEADS_URL || "https://bd-tool-nine.vercel.app/api/website-leads";
 
 export async function POST(request: NextRequest) {
   try {

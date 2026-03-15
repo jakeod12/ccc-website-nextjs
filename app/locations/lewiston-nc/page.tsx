@@ -6,7 +6,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 export const metadata: Metadata = {
   title: "CO₂ Capture Facility | Lewiston, NC",
   description:
-    "CleanCycleCarbon operates a commercial-scale CO₂ capture and purification facility in Lewiston, NC at the Perdue Farms campus, serving beverage and food-grade CO₂ buyers in the Southeast.",
+    "CleanCycleCarbon operates a commercial CO₂ capture facility in Lewiston, NC at the Perdue Farms campus. FDA-registered, beverage-grade CO₂.",
   openGraph: {
     title: "CO₂ Capture Facility | Lewiston, NC | CleanCycleCarbon",
     description:
@@ -104,6 +104,7 @@ export default function LewistonPage() {
                     src="/images/facility-golden-hour.jpg"
                     alt="Aerial view of CleanCycleCarbon Lewiston NC facility"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                   />
                 </div>
@@ -113,6 +114,7 @@ export default function LewistonPage() {
                       src="/images/first-delivery.jpg"
                       alt="First CO₂ product delivery from Lewiston facility"
                       fill
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
                     />
                   </div>
@@ -121,6 +123,7 @@ export default function LewistonPage() {
                       src="/images/vapor-action.jpg"
                       alt="CO₂ purification process in operation at Lewiston"
                       fill
+                      sizes="(max-width: 1024px) 50vw, 25vw"
                       className="object-cover"
                     />
                   </div>
@@ -211,7 +214,7 @@ export default function LewistonPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg"
+              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg"
             >
               Contact Us
             </Link>

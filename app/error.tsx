@@ -20,7 +20,7 @@ export default function Error({
         </p>
         <button
           onClick={() => reset()}
-          className="inline-block px-8 py-3.5 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 cursor-pointer"
+          className="inline-block px-8 py-4 bg-[#2D69B4] text-white font-semibold rounded hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 cursor-pointer"
         >
           Try Again
         </button>

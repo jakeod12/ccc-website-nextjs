@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "How CleanCycleCarbon collects, uses, and protects your information.",
     url: "https://cleancyclecarbon.com/privacy",
+    images: [{ url: "/images/og-preview.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Privacy Policy" }],
   },
   alternates: { canonical: "/privacy" },
 };

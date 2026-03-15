@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "CleanCycleCarbon is headquartered in North Charleston, SC. We develop and operate carbon capture facilities serving industrial partners across the Southeast.",
     url: "https://cleancyclecarbon.com/locations/north-charleston-sc",
+    images: [{ url: "/images/og-preview.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon North Charleston" }],
   },
   alternates: { canonical: "/locations/north-charleston-sc" },
 };
@@ -117,7 +118,7 @@ export default function NorthCharlestonPage() {
                 <div className="mt-8">
                   <Link
                     href="/contact"
-                    className="inline-block px-8 py-3.5 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] transition-all duration-300"
+                    className="inline-block px-8 py-4 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] active:opacity-80 transition-all duration-300"
                   >
                     Contact Us
                   </Link>
@@ -154,7 +155,7 @@ export default function NorthCharlestonPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg"
+              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg"
             >
               Partner With Us
             </Link>

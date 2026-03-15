@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       "Insights on CO₂ capture, purification, and the beverage grade CO₂ market from the CleanCycleCarbon team.",
     url: "https://cleancyclecarbon.com/blog",
+    images: [{ url: "/images/og-preview.jpg", width: 1200, height: 630, alt: "CleanCycleCarbon Blog" }],
   },
   alternates: { canonical: "/blog" },
 };
@@ -23,16 +24,21 @@ export default function BlogPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
-      <section className="bg-[#0F2D5A] pt-32 pb-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal direction="up">
+      <section className="relative bg-[#0F2D5A] py-32 sm:py-40 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F2D5A]/60 via-transparent to-[#0F2D5A]/80" />
+        <div className="relative z-10 max-w-7xl mx-auto text-center">
+          <ScrollReveal direction="fade">
             <p className="text-[#96C3E1] text-sm font-semibold uppercase tracking-widest mb-4">
               Blog
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.15}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
               Insights &amp; Updates
             </h1>
-            <p className="text-lg text-[#96C3E1]/80 max-w-2xl">
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={0.25}>
+            <p className="text-xl sm:text-2xl text-[#96C3E1] max-w-2xl mx-auto leading-relaxed">
               Technical deep dives, industry analysis, and project updates from
               the CleanCycleCarbon team.
             </p>
@@ -61,7 +67,6 @@ export default function BlogPage() {
                         src={article.heroImage}
                         alt={article.title}
                         fill
-                        priority={i === 0}
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
@@ -83,7 +88,7 @@ export default function BlogPage() {
                         <span>&middot;</span>
                         <span>
                           {new Date(article.date).toLocaleDateString("en-US", {
-                            month: "short",
+                            month: "long",
                             day: "numeric",
                             year: "numeric",
                           })}

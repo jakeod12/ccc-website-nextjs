@@ -7,7 +7,7 @@ import ProcessFlow from "../components/ProcessFlow";
 export const metadata: Metadata = {
   title: "Technology | Patent-Pending CO₂ Purification",
   description:
-    "CleanCycleCarbon's patent-pending cryogenic purification process captures CO₂ from industrial emissions and produces FDA-registered, beverage-grade CO₂ at commercial scale.",
+    "CleanCycleCarbon's patent-pending cryogenic process captures industrial CO₂ and purifies it to FDA-registered, beverage-grade quality.",
   openGraph: {
     title: "In-House Technology. Commercial Scale. Proven Results.",
     description:
@@ -32,36 +32,6 @@ const serviceSchema = {
   serviceType: "Carbon Capture and CO₂ Purification",
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is cryogenic CO₂ purification?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Cryogenic CO₂ purification uses low temperatures to separate CO₂ from contaminants in industrial emissions. CleanCycleCarbon's patent-pending process purifies raw CO₂ to FDA-registered, beverage-grade quality without chemical reagents.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What purity level does CleanCycleCarbon's CO₂ meet?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "CleanCycleCarbon produces CO₂ that meets FDA food-grade registration, beverage-grade purity standards suitable for carbonation, and industrial-grade specifications.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can the technology work with different emissions sources?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. CleanCycleCarbon's technology is feedstock agnostic and captures CO₂ from multiple types of industrial emissions including fermentation, combustion, and biological processes.",
-      },
-    },
-  ],
-};
 
 const howItWorksItems = [
   {
@@ -109,10 +79,6 @@ export default function TechnologyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
 
       {/* HERO */}
       <section className="relative py-32 md:py-40 bg-[#0F2D5A] overflow-hidden">
@@ -121,6 +87,7 @@ export default function TechnologyPage() {
           muted
           loop
           playsInline
+          preload="none"
           poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -201,6 +168,7 @@ export default function TechnologyPage() {
                   src="/images/vapor-action.jpg"
                   alt="CleanCycleCarbon cryogenic purification process in operation"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D5A]/30 to-transparent" />
@@ -218,6 +186,7 @@ export default function TechnologyPage() {
           muted
           loop
           playsInline
+          preload="none"
           poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         >
@@ -272,6 +241,7 @@ export default function TechnologyPage() {
                   src="/images/first-delivery.jpg"
                   alt="CleanCycleCarbon first CO₂ product delivery"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D5A]/20 to-transparent" />
@@ -333,19 +303,72 @@ export default function TechnologyPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-24 md:py-28 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <ScrollReveal direction="up">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A] mb-12 text-center">Frequently Asked Questions</h2>
+          </ScrollReveal>
+          <div className="space-y-8">
+            {[
+              {
+                q: "What is cryogenic CO₂ purification?",
+                a: "Cryogenic CO₂ purification uses low temperatures to separate CO₂ from contaminants in industrial emissions. CleanCycleCarbon's patent-pending process purifies raw CO₂ to FDA-registered, beverage-grade quality without chemical reagents.",
+              },
+              {
+                q: "What purity level does CleanCycleCarbon's CO₂ meet?",
+                a: "CleanCycleCarbon produces CO₂ that meets FDA food-grade registration, beverage-grade purity standards suitable for carbonation, and industrial-grade specifications.",
+              },
+              {
+                q: "Can the technology work with different emissions sources?",
+                a: "Yes. CleanCycleCarbon's technology is feedstock agnostic and captures CO₂ from multiple types of industrial emissions including fermentation, combustion, and biological processes.",
+              },
+            ].map((item, i) => (
+              <ScrollReveal key={i} direction="up" delay={i * 0.1}>
+                <div className="border-b border-gray-200 pb-8">
+                  <h3 className="text-lg font-bold text-[#0F2D5A] mb-3">{item.q}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.a}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+          <ScrollReveal direction="up" delay={0.3}>
+            <div className="text-center mt-10">
+              <Link
+                href="/faq"
+                className="text-[#2D69B4] font-semibold hover:underline transition-colors"
+              >
+                View all frequently asked questions &rarr;
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 md:py-24 bg-[#0F2D5A] text-center">
         <div className="max-w-2xl mx-auto px-4">
           <ScrollReveal direction="up">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Ready to explore a project?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to explore a project?</h2>
+            <p className="text-[#96C3E1] text-lg mb-8">
+              Learn how our technology can work at your facility.
+            </p>
           </ScrollReveal>
           <ScrollReveal direction="up" delay={0.15}>
-            <Link
-              href="/contact"
-              className="inline-block px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25 text-lg"
-            >
-              Partner With Us
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact?role=Site%20Host"
+                className="w-full sm:w-auto text-center px-10 py-4 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25 text-lg"
+              >
+                Discuss a Project
+              </Link>
+              <Link
+                href="/contact?role=Investor"
+                className="w-full sm:w-auto text-center px-10 py-4 border-2 border-white/60 text-white font-semibold rounded-lg hover:bg-white hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 text-lg"
+              >
+                Investor Inquiries
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
       </section>

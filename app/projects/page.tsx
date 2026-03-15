@@ -55,6 +55,7 @@ export default function ProjectsPage() {
           muted
           loop
           playsInline
+          preload="none"
           poster="/images/facility-golden-hour.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
@@ -167,6 +168,7 @@ export default function ProjectsPage() {
                     src="/images/facility-golden-hour.jpg"
                     alt="CleanCycleCarbon Lewiston NC facility exterior"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D5A]/40 to-transparent" />
@@ -210,7 +212,7 @@ export default function ProjectsPage() {
               <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D5A]">Facility Photos</h2>
             </div>
           </ScrollReveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] sm:auto-rows-[240px] lg:auto-rows-[280px]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[160px] sm:auto-rows-[240px] lg:auto-rows-[280px]">
             {galleryImages.map((img, i) => {
               const isLarge = i === 0 || i === 5;
               return (
@@ -285,7 +287,7 @@ export default function ProjectsPage() {
                     </p>
                     <Link
                       href="/contact?role=Site%20Host"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/20"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#2D69B4] text-white font-semibold rounded-lg hover:bg-[#96C3E1] hover:text-[#0F2D5A] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:shadow-[#2D69B4]/25"
                     >
                       Talk to Us
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>

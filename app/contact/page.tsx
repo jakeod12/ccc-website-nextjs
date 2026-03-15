@@ -62,7 +62,7 @@ function ContactForm() {
   }
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg border border-gray-200 bg-white text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2D69B4] focus:border-transparent transition-all duration-200";
+    "w-full px-4 py-3.5 rounded-lg border border-gray-200 bg-white text-base text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#2D69B4] focus:border-transparent transition-all duration-200";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -132,16 +132,17 @@ function ContactForm() {
 
       <div>
         <label htmlFor="role" className="block text-sm font-semibold text-[#0F2D5A] mb-2">
-          I am a...
+          I am a... <span className="text-red-500">*</span>
         </label>
         <select
           id="role"
           name="role"
+          required
           value={formData.role}
           onChange={handleChange}
           className={inputClass}
         >
-          <option value="">Select your role</option>
+          <option value="">Select your role *</option>
           {ROLES.map((r) => (
             <option key={r} value={r}>
               {r}
@@ -168,6 +169,8 @@ function ContactForm() {
 
       {result && (
         <div
+          role="alert"
+          aria-live="polite"
           className={`p-4 rounded-lg text-sm font-medium ${
             result.ok
               ? "bg-green-50 text-green-800 border border-green-200"
@@ -181,7 +184,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full sm:w-auto px-10 py-4 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+        className="w-full sm:w-auto px-10 py-4 bg-[#0F2D5A] text-white font-semibold rounded-lg hover:bg-[#2D69B4] active:opacity-80 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
       >
         {loading ? (
           <span className="flex items-center justify-center gap-2">
@@ -237,6 +240,9 @@ export default function ContactPage() {
             <p className="text-xl sm:text-2xl text-[#96C3E1] max-w-2xl mx-auto leading-relaxed">
               Whether you&apos;re exploring CO₂ supply, evaluating a host site, or interested in investing, we&apos;d like to hear from you.
             </p>
+            <p className="mt-4 text-[#96C3E1]/70 text-sm">
+              Have a quick question? Check our <a href="/faq" className="underline hover:text-white transition-colors">FAQ</a> first.
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -248,6 +254,12 @@ export default function ContactPage() {
             <div className="bg-gray-50 rounded-2xl p-8 sm:p-12 shadow-lg ring-1 ring-gray-100">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#0F2D5A] mb-2">Send Us a Message</h2>
               <p className="text-gray-600 mb-8">Fill out the form below and our team will respond within one business day.</p>
+              <noscript>
+                <div className="p-4 rounded-lg bg-blue-50 text-[#0F2D5A] text-sm border border-blue-200">
+                  This form requires JavaScript. Please email us directly at{" "}
+                  <a href="mailto:info@cleancyclecarbon.com" className="text-[#2D69B4] underline">info@cleancyclecarbon.com</a>.
+                </div>
+              </noscript>
               <Suspense fallback={<ContactFormSkeleton />}>
                 <ContactForm />
               </Suspense>

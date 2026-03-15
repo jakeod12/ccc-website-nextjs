@@ -21,9 +21,13 @@ function ContactForm() {
 
   useEffect(() => {
     const roleParam = searchParams.get("role");
+    const emailParam = searchParams.get("email");
     if (roleParam) {
       const match = ROLES.find((r) => r.toLowerCase() === roleParam.toLowerCase());
       if (match) setFormData((prev) => ({ ...prev, role: match }));
+    }
+    if (emailParam) {
+      setFormData((prev) => ({ ...prev, email: emailParam }));
     }
   }, [searchParams]);
 
